@@ -96,6 +96,7 @@
                     <span class="close">&times;</span>
                     <h2 id="modalTitle"></h2>
                     <img id="modalImage">
+                    <div id="modalIFrame"></div>
                     <p id="modalContent"></p>
                 </div>
             </div>
@@ -112,10 +113,10 @@
 
                     <div class="row">
                         <div class="4u 12u$(mobile)">
-                            <article class="item">
-                                <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                            <article id="embeddedMap" class="item">
+                                <button onclick="openModal('embeddedMap')" class="image fit"><img src="images/googleMaps.png" alt="" /></button>
                                 <header>
-                                    <h3>Ipsum Feugiat</h3>
+                                    <h3>An Embedded Map</h3>
                                 </header>
                             </article>
                             <article class="item">

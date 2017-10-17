@@ -1,0 +1,10 @@
+{
+   "articles": 
+        {
+            "article":"wildfire",
+            "title": "Wildfire Risk Assessment",
+            "content":"This was mu submission to the 2015 URISA GIS-PRO conference. I used 6 different factors to evaluate wildfire risk in western Washington State.",
+            "image":"images/wildfire_risk.png"
+        }
+   
+}

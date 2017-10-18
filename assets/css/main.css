@@ -2597,7 +2597,7 @@
     cursor: pointer;
 }
 
-/*Google Maps Stuff */
+/*Google Maps Stuff to make it responsive */
 .google-maps {
         position: relative;
         padding-bottom: 75%;

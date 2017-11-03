@@ -3,7 +3,7 @@ var myData;
 var map = L.map('map').setView([35, 0], 2);
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ &mdash Data from: http://data.un.org/DocumentData.aspx?id=375',
     maxZoom: 16
 }).addTo(map);
 

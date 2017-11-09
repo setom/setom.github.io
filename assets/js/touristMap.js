@@ -42,8 +42,8 @@ info.onAdd = function (map) {
 };
 
 //get the change in visitors, if no data return No Data
-getChange = function(props){
-    if (props.hasOwnProperty('Change')){
+getChange = function (props) {
+    if (props.hasOwnProperty('Change')) {
         return props.Change + "% change";
     } else {
         return "No Data";
@@ -51,9 +51,9 @@ getChange = function(props){
 };
 
 info.update = function (props) {
-     this._div.innerHTML = '<h4>Change in Incoming Tourists 2004 - 2014</h4>' + (props ?
-                '<b>' + props.CNTRY_NAME + '</b><br />' + getChange(props)
-                : 'Hover over a state');
+    this._div.innerHTML = '<h4>Change in Incoming Tourists 2004 - 2014</h4>' + (props ?
+            '<b>' + props.CNTRY_NAME + '</b><br />' + getChange(props)
+            : 'Hover over a state');
 };
 
 info.addTo(map);
@@ -110,6 +110,40 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+
+//Reset extent button
+// Thanks to http://www.coffeegnome.net/control-button-leaflet/
+//reset the extent on a click
+resetExtent = function () {
+    map.setView([35, 0], 2);
+};
+
+//the button
+var customControl =  L.Control.extend({
+
+  options: {
+    position: 'topright'
+  },
+
+  onAdd: function (map) {
+    var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
+
+    container.style.backgroundColor = 'white';  
+    container.style.backgroundImage = "url(images/globeIcon.png)";
+    container.style.backgroundSize = "30px 30px";
+    container.style.width = '30px';
+    container.style.height = '30px';
+
+    container.onclick = function(){
+      resetExtent();
+    };
+
+    return container;
+  }
+});
+
+map.addControl(new customControl());
+
 
 //MAKE THE MAP! :)
 myData = L.geoJson(tourism, {

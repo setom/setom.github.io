@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8">
+        <title>Leaflet Map with a Feature Layer</title>  
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+        <!-- Load Leaflet from CDN-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+        <!-- Load Esri Leaflet from Content Delivery Network (CDN) -->
+        <script src="https://unpkg.com/esri-leaflet@2.0.4/dist/esri-leaflet.js"></script>
+
+        <style>
+            html,
+            body,
+            #map {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <!-- Load Esri Leaflet Renderers -->
+        <!-- This will hook into Esri Leaflet to get renderer info when adding a feature layer -->
+        <script src="https://unpkg.com/esri-leaflet-renderers@2.0.6"></script>
+    </head>
+    <body>    
+        <div id="map"></div>
+
+        <script>
+            var map = L.map('map', {
+            center: [47.751, -120.740],
+            zoom: 7
+            });
+
+            var esriStreets = L.esri.basemapLayer('Topographic').addTo(map); 
+
+            //add feature polygons of elk harvests
+            var elkHarvests = L.esri.featureLayer({url: 'https://gispublic.dfw.wa.gov/arcgis/rest/services/MapServices/HarvestStats/MapServer/3'}).addTo(map);
+
+            //popup details 
+            elkHarvests.bindPopup(function (layer) {
+            return L.Util.template('<p><b>Total Elk Harvest: {Total_Harvest}.</b></p>', layer.feature.properties);
+            });
+        </script>    
+    </body>
+</html>

@@ -13,6 +13,9 @@ and open the template in the editor.
         <link rel="stylesheet" href="assets/css/main.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!-- ESRI -->
+        <link rel="stylesheet" href="https://js.arcgis.com/3.22/esri/css/esri.css">
+        <script src="https://js.arcgis.com/3.22/"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108644064-1"></script>
         <script>
@@ -48,6 +51,9 @@ and open the template in the editor.
                 margin: 10px;
                 border: 1px solid #000;
             }
+            #map3 {
+                height: 70vh;
+
         </style>
     </head>
     <body>
@@ -88,20 +94,40 @@ and open the template in the editor.
                     <div id="legend1">
                         <img src="images/quake.png" width="20" style="margin-bottom: 0px;"> <p> <b>Earthquake</b><br>size indicates magnitude</p>
                     </div>
-                    <script src="assets/js/earthquake.js" type="text/javascript"></script>
+                    <script src="assets/js/quakesAndCruises.js" type="text/javascript"></script>
                     <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6g78v8Mr8vNeEQgtwtfBVpdMrGMoNAfs&callback=initMap"></script>
                     <p>Data from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson"> USGS.</a> Map updates every 5 minutes</p>
+                    <p style="text-size: 8px;">This map is pulling live data from the USGS earthquake GeoJSON server. The map uses the Google Maps API to deliver a stylized, simply to read map that displays earthquakes around the world from the last 7 days.
+                    Click earthquake points to view additional information, or to follow USGS links to view further details about the event.</p>
+                    <hr>
                 </div>
                 <div>
-                    <h3>Global Cruise Ships Live KML: Continual Cruise Ship Locations & Vectors</h3>
+                    <br>
+                    <h3>Global Cruise Ships Live KMZ: Continual Cruise Ship Locations & Vectors</h3>
                     <div id="map2" style="height: 70vh; border: 1px solid grey;"></div>
                     <div id="legend2">
                         <p> <b>Ships are identified by the logo of their carrier</b><br>Click a ship for further details</p>
                     </div>
                     <p>Data from <a href="www.seascanner.com"> Sea Scanner.</a> KML Data Updated by Seascanner</p>
+                    <p style="text-size: 8px;">This map is pulling live data about the locations, trajectories and other details of passenger cruise ships. The data is from a KMZ source that is unpacked and displayed using the Google Maps API. 
+                    The basemap has been stylized by me, however the point data inherits the stylization from the source.</p>
                     <hr>
                 </div>
-
+                <div>
+                    <br>
+                    <h3>Snowfall Probability Live KML: Probability of >4 Inches of Snow in the Next 24 Hours</h3>
+                    <script src="assets/js/precipitation.js" type="text/javascript"></script>
+                    <div id="map3"
+                         data-dojo-type="dijit/layout/ContentPane"
+                         data-dojo-props="region:'center'">
+                        <div id="meta">
+                            <span id="loading"><img src="images/loading_black.gif" /></span>
+                        </div>
+                    </div>
+                    <p>Data from <a href="http://www.wpc.ncep.noaa.gov/kml/kmlproducts.php"> NCEP-NOAA.</a> Data Updated by NCEP-NOAA</p>
+                    <p style="text-size: 8px;">This map is displaying live data from NOAA-NCEP's forecasting tools. The polygons on the map depict areas where more than 4 inches of snow is likely. The data is a KML source displayed using the ESRI ArcGis JS3.22 library. 
+                    The basemap has been stylized, however KML files inherit their stylization from the source.</p>
+                </div>
             </div>
         </div>
     </body>

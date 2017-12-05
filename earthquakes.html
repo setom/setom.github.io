@@ -81,22 +81,27 @@ and open the template in the editor.
             <div id="content" style="padding: 3%;">
                 <h2 style="text-align: center;">Live Data Feeds</h2>
                 <hr>
-                <h3>NSIDC Live KML: Daily Arctic Sea Ice Extent</h3>
-                <div id="map2" style="height: 70vh; border: 1px solid grey;"></div>
-                <div id="legend2">
-                    <p> <b>White Polygon Indicates Sea Ice Extent</b><br> Data updated daily</p>
+                <div>
+                    <h3>USGS Live GeoJSON: 2.5m Earthquakes over the last 7 days</h3>
+                    <div id="map1" style="height: 70vh;"></div>
+                    <div id="info-box">Hover over an Earthquake for details</div>
+                    <div id="legend1">
+                        <img src="images/quake.png" width="20" style="margin-bottom: 0px;"> <p> <b>Earthquake</b><br>size indicates magnitude</p>
+                    </div>
+                    <script src="assets/js/earthquake.js" type="text/javascript"></script>
+                    <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6g78v8Mr8vNeEQgtwtfBVpdMrGMoNAfs&callback=initMap"></script>
+                    <p>Data from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson"> USGS.</a> Map updates every 5 minutes</p>
                 </div>
-                <p>Data from <a href="http://nsidc.org/data/masie/"> NSIDC.</a> Map updates daily</p>
-                <hr>
-                <h3>USGS Live GeoJSON: 2.5m Earthquakes over the last 7 days</h3>
-                <div id="map1" style="height: 70vh;"></div>
-                <div id="info-box">Hover over an Earthquake for details</div>
-                <div id="legend1">
-                    <img src="images/quake.png" width="20" style="margin-bottom: 0px;"> <p> <b>Earthquake</b><br>size indicates magnitude</p>
+                <div>
+                    <h3>Global Cruise Ships Live KML: Continual Cruise Ship Locations & Vectors</h3>
+                    <div id="map2" style="height: 70vh; border: 1px solid grey;"></div>
+                    <div id="legend2">
+                        <p> <b>Ships are identified by the logo of their carrier</b><br>Click a ship for further details</p>
+                    </div>
+                    <p>Data from <a href="www.seascanner.com"> Sea Scanner.</a> KML Data Updated by Seascanner</p>
+                    <hr>
                 </div>
-                <script src="assets/js/earthquake.js" type="text/javascript"></script>
-                <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6g78v8Mr8vNeEQgtwtfBVpdMrGMoNAfs&callback=initMap"></script>
-                <p>Data from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson"> USGS.</a> Map updates every 5 minutes</p>
+
             </div>
         </div>
     </body>

@@ -554,8 +554,8 @@ function initMap() {
             {name: 'Styled Map'});
 
     var map2 = new google.maps.Map(document.getElementById('map2'), {
-        center: {lat: 74, lng: -19},
-        zoom: 3,
+        center: {lat: 21, lng: -77},
+        zoom: 4,
         mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
                 'styled_map']
@@ -568,7 +568,7 @@ function initMap() {
 
     //add the ice layer
     var georssLayer = new google.maps.KmlLayer({
-        url: 'http://masie_web.apps.nsidc.org/pub/DATASETS/NOAA/G02186/latest/4km/masie_ice_r00.kmz',
+        url: 'https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjb566kvvPXAhVY82MKHbdRB-oQFggpMAA&url=http%3A%2F%2Fwww.seascanner.com%2Fkml%2Fkfben.kml&usg=AOvVaw2zbtqzla_FDa8i7FRZVPTD',
         //don't let the new layer change the center/zoom of the map
         preserveViewport: true
     });

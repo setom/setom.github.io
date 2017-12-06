@@ -10,7 +10,7 @@ require([
     map = new Map("map3", {
         basemap: "dark-gray",
         center: [-98.663, 42],
-        zoom: 5
+        zoom: 4
     });
 
     parser.parse();

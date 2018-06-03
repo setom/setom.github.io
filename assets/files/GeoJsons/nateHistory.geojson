@@ -1,0 +1,705 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"www.google.com",
+    "IP_Number":"74.125.199.103",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.6762,45.5234 ]
+    },
+    "properties": {
+    "SiteName":"www.netflix.com",
+    "IP_Number":"52.37.77.112",
+    "City":"Portland",
+    "State":"OR",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3321,47.6062 ]
+    },
+    "properties": {
+    "SiteName":"www.rottentomatoes.com",
+    "IP_Number":"23.198.153.157",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.thoughtco.com",
+    "IP_Number":"151.101.53.121",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"www.colorbrewer2.org",
+    "IP_Number":"52.216.66.58",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"www.data.gov",
+    "IP_Number":"13.33.151.162",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.imgur.com",
+    "IP_Number":"151.101.52.193",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"www.earthinthepast.blogspot.com",
+    "IP_Number":"216.58.216.161",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.1392,46.181 ]
+    },
+    "properties": {
+    "SiteName":"www.greenfacts.org",
+    "IP_Number":"83.166.138.22",
+    "City":"Carouge",
+    "State":"Geneve",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.5786,39.0997 ]
+    },
+    "properties": {
+    "SiteName":"www.edgeworksclimbing.com",
+    "IP_Number":"74.208.236.240",
+    "City":"Kansas City",
+    "State":"MO",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.election-data.co.uk",
+    "IP_Number":"104.27.155.225",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.65,41.85 ]
+    },
+    "properties": {
+    "SiteName":"www.tpchd.org",
+    "IP_Number":"135.84.124.104",
+    "City":"Chicago",
+    "State":"IL",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8067,32.7831 ]
+    },
+    "properties": {
+    "SiteName":"www.thenewstribune.com",
+    "IP_Number":"23.56.112.75",
+    "City":"Dallas",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.8707,47.0311 ]
+    },
+    "properties": {
+    "SiteName":"www.ecology.wa.gov",
+    "IP_Number":"198.239.177.61",
+    "City":"Olympia",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8879,33.602 ]
+    },
+    "properties": {
+    "SiteName":"www.robertschoch.com",
+    "IP_Number":"107.180.51.231",
+    "City":"Scottsdale",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8067,32.7831 ]
+    },
+    "properties": {
+    "SiteName":"www.barnesandnoble.com",
+    "IP_Number":"23.45.86.226",
+    "City":"Dallas",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.1292,37.4169 ]
+    },
+    "properties": {
+    "SiteName":"www.ign.com",
+    "IP_Number":"192.33.31.80",
+    "City":"Palo Alto",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.1747,41.2094 ]
+    },
+    "properties": {
+    "SiteName":"www.summitviewclinic.com",
+    "IP_Number":"75.78.124.68",
+    "City":"Omaha",
+    "State":"NE",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.1746,50.6942 ]
+    },
+    "properties": {
+    "SiteName":"www.icimeme.org",
+    "IP_Number":"213.186.33.40",
+    "City":"Roubaix",
+    "State":"Hauts_De_France",
+    "Country":"France"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2011,42.5085 ]
+    },
+    "properties": {
+    "SiteName":"www.jeremywood.net",
+    "IP_Number":"66.96.149.20",
+    "City":"Burlington",
+    "State":"MA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8067,32.7831 ]
+    },
+    "properties": {
+    "SiteName":"www.mcafee.com",
+    "IP_Number":"23.38.230.28",
+    "City":"Dallas",
+    "State":"Texas",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.nintendolife.com",
+    "IP_Number":"104.24.30.24",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.895,37.3394 ]
+    },
+    "properties": {
+    "SiteName":"www.smashbros.com",
+    "IP_Number":"104.91.220.176",
+    "City":"San Jose",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.895,37.3394 ]
+    },
+    "properties": {
+    "SiteName":"www.hulu.com",
+    "IP_Number":"104.91.213.130",
+    "City":"San Jose",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"www.waurisa.org",
+    "IP_Number":"34.226.77.200",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.sbnation.com",
+    "IP_Number":"151.101.53.52",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.8948,37.6853 ]
+    },
+    "properties": {
+    "SiteName":"www.zoho.com",
+    "IP_Number":"8.40.222.155",
+    "City":"Pleasanton",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.6762,45.5234 ]
+    },
+    "properties": {
+    "SiteName":"gopro.com",
+    "IP_Number":"52.25.203.198",
+    "City":"Portland",
+    "State":"OR",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.9463,37.2308 ]
+    },
+    "properties": {
+    "SiteName":"www.royalsocietypublishing.org",
+    "IP_Number":"104.232.27.118",
+    "City":"Los Gatos",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.nexusmods.com",
+    "IP_Number":"104.25.118.119",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.quora.com",
+    "IP_Number":"151.101.41.2",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.895,37.3394 ]
+    },
+    "properties": {
+    "SiteName":"www.sciencedirect.com",
+    "IP_Number":"23.5.246.153",
+    "City":"San Jose",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.matplotlib.org",
+    "IP_Number":"104.25.2.116",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.pnas.org",
+    "IP_Number":"104.16.164.16",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.jneurosci.org",
+    "IP_Number":"104.16.150.14",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.pcgamesn.com",
+    "IP_Number":"104.20.79.227",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.newyorker.com",
+    "IP_Number":"151.101.0.239",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.buzzfeed.com",
+    "IP_Number":"151.101.42.112",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"www.tracking-board.com",
+    "IP_Number":"104.196.255.167",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.3488,48.8534 ]
+    },
+    "properties": {
+    "SiteName":"www.aboveandbeyond.nu",
+    "IP_Number":"51.15.151.215",
+    "City":"Paris",
+    "State":"Ile_de_France",
+    "Country":"France"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 151.198,-33.8612 ]
+    },
+    "properties": {
+    "SiteName":"www.theshovel.com.au",
+    "IP_Number":"54.79.98.255",
+    "City":"Sydney",
+    "State":"New South Whales",
+    "Country":"Australia"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.6762,45.5234 ]
+    },
+    "properties": {
+    "SiteName":"www.pac-12.com",
+    "IP_Number":"54.214.0.24",
+    "City":"Portland",
+    "State":"OR",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4137,37.7484 ]
+    },
+    "properties": {
+    "SiteName":"www.thecrunch.com",
+    "IP_Number":"192.0.66.2",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.pnas.org",
+    "IP_Number":"104.16.164.16",
+    "City":"Portland",
+    "State":"OR",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"www.globalnews.ca",
+    "IP_Number":"52.20.131.42",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.6155,45.5067 ]
+    },
+    "properties": {
+    "SiteName":"www.nouvelles.umontreal.ca",
+    "IP_Number":"132.204.8.134",
+    "City":"Montreal",
+    "State":"Quebec",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.65,41.85 ]
+    },
+    "properties": {
+    "SiteName":"www.spatiallearning.org",
+    "IP_Number":"165.124.181.29",
+    "City":"Chicago",
+    "State":"IL",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.vimeo.com",
+    "IP_Number":"151.101.128.217",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.6341,40.2139 ]
+    },
+    "properties": {
+    "SiteName":"www.sevenlions.org",
+    "IP_Number":"74.220.207.127",
+    "City":"Provo",
+    "State":"UT",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.kotaku.com",
+    "IP_Number":"151.101.194.166",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  }
+]
+}

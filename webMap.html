@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>Create and style clusters</title>
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+        <style>
+            body { margin:0; padding:0; }
+            #map { position:absolute; top:0; bottom:0; width:100%; }
+            #menu {
+                background: #fff;
+                position: absolute;
+                z-index: 1;
+                top: 10px;
+                right: 10px;
+                border-radius: 3px;
+                width: 120px;
+                border: 1px solid rgba(0,0,0,0.4);
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            #menu a {
+                font-size: 13px;
+                color: #404040;
+                display: block;
+                margin: 0;
+                padding: 0;
+                padding: 10px;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(0,0,0,0.25);
+                text-align: center;
+            }
+
+            #menu a:last-child {
+                border: none;
+            }
+
+            #menu a:hover {
+                background-color: #f8f8f8;
+                color: #404040;
+            }
+
+            #menu a.active {
+                background-color: #3887be;
+                color: #ffffff;
+            }
+
+            #menu a.active:hover {
+                background: #3074a4;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav id="menu"></nav>
+        <div id='map'></div>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic2V0b20iLCJhIjoiY2o5NmN0dHB4MDNoaDJ3bWw1N2JvemlpaSJ9.McVFy9qwVkdrV_anNWv7jw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/dark-v9',
+                center: [0, 30],
+                zoom: 1.5
+            });
+
+            map.on('load', function () {
+                //Matt Points Data
+                map.addSource("mattPoints", {
+                    type: "geojson",
+                    data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/mattHistory.geojson",
+                    cluster: true,
+                    clusterMaxZoom: 14, // Max zoom to cluster points on
+                    clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+                });
+                map.addLayer({
+                    id: "Matt",
+                    type: "circle",
+                    source: "mattPoints",
+                    filter: ["has", "point_count"],
+                    paint: {
+                        // Use step expressions (https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+                        // with three steps to implement three types of circles:
+                        //   * Blue, 20px circles when point count is less than 100
+                        //   * Yellow, 30px circles when point count is between 100 and 750
+                        //   * Pink, 40px circles when point count is greater than or equal to 750
+                        "circle-color": [
+                            "step",
+                            ["get", "point_count"],
+                            "#51bbd6",
+                            2,
+                            "#51bbd6",
+                            5,
+                            "#51bbd6"
+                        ],
+                        "circle-radius": [
+                            "step",
+                            ["get", "point_count"],
+                            20,
+                            100,
+                            30,
+                            750,
+                            40
+                        ]
+                    }
+                });
+                /*
+                 map.addLayer({
+                 id: "cluster-count",
+                 type: "symbol",
+                 source: "mattPoints",
+                 filter: ["has", "point_count"],
+                 layout: {
+                 "text-field": "{point_count_abbreviated}",
+                 "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
+                 "text-size": 12
+                 }
+                 });
+                 */
+                map.addLayer({
+                    id: "MattPts",
+                    type: "circle",
+                    source: "mattPoints",
+                    filter: ["!has", "point_count"],
+                    paint: {
+                        "circle-color": "#11b4da",
+                        "circle-radius": 4,
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
+                    }
+                });
+
+                //Nate Points Data
+                map.addSource("natePoints", {
+                    type: "geojson",
+                    data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/nateHistory.geojson",
+                    cluster: true,
+                    clusterMaxZoom: 14, // Max zoom to cluster points on
+                    clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+                });
+                map.addLayer({
+                    id: "Nate",
+                    type: "circle",
+                    source: "natePoints",
+                    filter: ["has", "point_count"],
+                    paint: {
+                        // Use step expressions (https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+                        // with three steps to implement three types of circles:
+                        //   * Blue, 20px circles when point count is less than 100
+                        //   * Yellow, 30px circles when point count is between 100 and 750
+                        //   * Pink, 40px circles when point count is greater than or equal to 750
+                        "circle-color": [
+                            "step",
+                            ["get", "point_count"],
+                            "#f28cb1",
+                            2,
+                            "#f28cb1",
+                            5,
+                            "#f28cb1"
+                        ],
+                        "circle-radius": [
+                            "step",
+                            ["get", "point_count"],
+                            20,
+                            100,
+                            30,
+                            750,
+                            40
+                        ]
+                    }
+                });
+                map.addLayer({
+                    id: "NatePts",
+                    type: "circle",
+                    source: "natePoints",
+                    filter: ["!has", "point_count"],
+                    paint: {
+                        "circle-color": "#f28cb1",
+                        "circle-radius": 4,
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
+                    }
+                });
+            });
+
+            var toggleableLayerIds = ['Nate', 'Matt'];
+
+            for (var i = 0; i < toggleableLayerIds.length; i++) {
+                var id = toggleableLayerIds[i];
+
+                var link = document.createElement('a');
+                link.href = '#';
+                link.className = 'active';
+                link.textContent = id;
+
+                link.onclick = function (e) {
+                    var clickedLayer = this.textContent;
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+                    if (visibility === 'visible') {
+                        map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                        map.setLayoutProperty(clickedLayer+"Pts", 'visibility', 'none');
+                        this.className = '';
+                    } else {
+                        this.className = 'active';
+                        map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                        map.setLayoutProperty(clickedLayer+"Pts", 'visibility', 'visible');
+                    }
+                };
+
+                var layers = document.getElementById('menu');
+                layers.appendChild(link);
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,1041 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4137,37.7484 ]
+    },
+    "properties": {
+    "SiteName":"fivethirtyeight.com",
+    "IP_Number":"192.0.66.2",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8897,52.374 ]
+    },
+    "properties": {
+    "SiteName":"square.github.io",
+    "IP_Number":"185.199.108.153",
+    "City":"Amsterdam",
+    "State":"Noord-Holland",
+    "Country":"Netherlands"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8879,33.602 ]
+    },
+    "properties": {
+    "SiteName":"joshuastevens.net",
+    "IP_Number":"50.63.202.15",
+    "City":"Scottsdale",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.6341,40.2139 ]
+    },
+    "properties": {
+    "SiteName":"andywoodruff.com",
+    "IP_Number":"69.89.31.214",
+    "City":"Provo",
+    "State":"UT",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.388,33.749 ]
+    },
+    "properties": {
+    "SiteName":"www.jsu.edu",
+    "IP_Number":"205.174.48.175",
+    "City":"Atlanta",
+    "State":"GA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.1721,34.0488 ]
+    },
+    "properties": {
+    "SiteName":"desktop.arcgis.com",
+    "IP_Number":"198.102.61.235",
+    "City":"Redlands",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.5402,33.2162 ]
+    },
+    "properties": {
+    "SiteName":"alabamamaps.ua.edu",
+    "IP_Number":"130.160.24.14",
+    "City":"Tuscaloosa",
+    "State":"AL",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"mail.google.com",
+    "IP_Number":"172.217.164.101",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"canvas.uw.edu",
+    "IP_Number":"52.86.199.216",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"d3js.org",
+    "IP_Number":"104.25.49.22",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.4741,29.8312 ]
+    },
+    "properties": {
+    "SiteName":"indiemaps.com",
+    "IP_Number":"192.185.4.160",
+    "City":"Houston",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.834,40.87 ]
+    },
+    "properties": {
+    "SiteName":"www.geovista.psu.edu",
+    "IP_Number":"128.118.53.26",
+    "City":"University Park",
+    "State":"PA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.3209,33.7932 ]
+    },
+    "properties": {
+    "SiteName":"www.atsdr.cdc.gov",
+    "IP_Number":"198.246.102.34",
+    "City":"Atlanta",
+    "State":"GA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"uwt-gis-geotech.maps.arcgis.com",
+    "IP_Number":"54.209.247.183",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.8948,37.6853 ]
+    },
+    "properties": {
+    "SiteName":"wd5.myworkday.com",
+    "IP_Number":"209.177.169.63",
+    "City":"Pleasanton",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.loc.gov",
+    "IP_Number":"104.16.55.16",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"www.linkedin.com",
+    "IP_Number":"108.174.10.10",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.292,47.6639 ]
+    },
+    "properties": {
+    "SiteName":"students.washington.edu",
+    "IP_Number":"128.208.181.36",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.4921,42.6512 ]
+    },
+    "properties": {
+    "SiteName":"careernetwork.msu.edu",
+    "IP_Number":"35.8.12.164",
+    "City":"East Lansing",
+    "State":"MI",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.3721,48.2085 ]
+    },
+    "properties": {
+    "SiteName":"cran.r-project.org",
+    "IP_Number":"137.208.57.37",
+    "City":"Vienna",
+    "State":"Wien",
+    "Country":"Austria"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"www.youtube.com",
+    "IP_Number":"172.217.5.110",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.895,37.3394 ]
+    },
+    "properties": {
+    "SiteName":"www.avast.com",
+    "IP_Number":"104.85.170.229",
+    "City":"San Jose",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4194,37.7749 ]
+    },
+    "properties": {
+    "SiteName":"www.slack.com",
+    "IP_Number":"54.230.143.142",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.0121,40.8043 ]
+    },
+    "properties": {
+    "SiteName":"resume.io",
+    "IP_Number":"67.207.90.175",
+    "City":"North Bergen",
+    "State":"NJ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.895,37.3394 ]
+    },
+    "properties": {
+    "SiteName":"www.myperfectresume.com",
+    "IP_Number":"104.91.188.73",
+    "City":"San Jose",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.3967,33.955 ]
+    },
+    "properties": {
+    "SiteName":"nacis.org",
+    "IP_Number":"23.235.213.250",
+    "City":"Los Angeles",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.5976,39.1957 ]
+    },
+    "properties": {
+    "SiteName":"www.co.pierce.wa.us",
+    "IP_Number":"208.90.189.52",
+    "City":"Manhattan",
+    "State":"KS",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4286,39.0062 ]
+    },
+    "properties": {
+    "SiteName":"www.aag.org",
+    "IP_Number":"168.143.180.172",
+    "City":"Sterling",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.6341,40.2139 ]
+    },
+    "properties": {
+    "SiteName":"www.paletton.com",
+    "IP_Number":"66.147.240.156",
+    "City":"Provo",
+    "State":"UT",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"colorbrewer2.org",
+    "IP_Number":"52.216.162.42",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"expanse.wikia.com",
+    "IP_Number":"151.101.192.194",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.834,40.87 ]
+    },
+    "properties": {
+    "SiteName":"citeseerx.ist.psu.edu",
+    "IP_Number":"130.203.136.95",
+    "City":"University Park",
+    "State":"PA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.006,40.7143 ]
+    },
+    "properties": {
+    "SiteName":"sedac.ciesin.columbia.edu",
+    "IP_Number":"129.236.39.66",
+    "City":"New York City",
+    "State":"NY",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.6546,34.6333 ]
+    },
+    "properties": {
+    "SiteName":"urs.earthdata.nasa.gov",
+    "IP_Number":"198.118.243.33",
+    "City":"Redstone Arsenal",
+    "State":"AL",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.0452,32.5483 ]
+    },
+    "properties": {
+    "SiteName":"onlinelibrary.wiley.com",
+    "IP_Number":"65.156.1.101",
+    "City":"Monroe",
+    "State":"LA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4008,37.7913 ]
+    },
+    "properties": {
+    "SiteName":"en.wikipedia.org",
+    "IP_Number":"198.35.26.96",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4104,37.774 ]
+    },
+    "properties": {
+    "SiteName":"twitter.com",
+    "IP_Number":"104.244.42.193",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"imgur.com",
+    "IP_Number":"151.101.40.193",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4137,37.7484 ]
+    },
+    "properties": {
+    "SiteName":"rightbasicbuilding.files.wordpress.com",
+    "IP_Number":"192.0.72.28",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.4055,33.9222 ]
+    },
+    "properties": {
+    "SiteName":"www.governmentjobs.com",
+    "IP_Number":"162.246.160.80",
+    "City":"El Segundo",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.292,47.6639 ]
+    },
+    "properties": {
+    "SiteName":"pugetsoundlidar.ess.washington.edu",
+    "IP_Number":"128.208.23.124",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"www.imdb.com",
+    "IP_Number":"52.94.237.74",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.reddit.com",
+    "IP_Number":"151.101.41.140",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.8698,47.023 ]
+    },
+    "properties": {
+    "SiteName":"fortress.wa.gov",
+    "IP_Number":"198.239.146.19",
+    "City":"Olympia",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.mediafire.com",
+    "IP_Number":"104.19.195.29",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.1602,39.9673 ]
+    },
+    "properties": {
+    "SiteName":"sos.alabama.gov",
+    "IP_Number":"206.16.212.91",
+    "City":"Carmel",
+    "State":"IN",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.27,40.015 ]
+    },
+    "properties": {
+    "SiteName":"coast.noaa.gov",
+    "IP_Number":"140.172.116.90",
+    "City":"Boulder",
+    "State":"CO",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.8659,45.3168 ]
+    },
+    "properties": {
+    "SiteName":"uptowork.com",
+    "IP_Number":"167.114.156.161",
+    "City":"Beauharnois",
+    "State":"Quebec",
+    "Country":"Canada"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0464,47.3927 ]
+    },
+    "properties": {
+    "SiteName":"onlinebanking.becu.org",
+    "IP_Number":"63.147.206.62",
+    "City":"Maple Valley",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2011,42.5085 ]
+    },
+    "properties": {
+    "SiteName":"www.aerialarchives.com",
+    "IP_Number":"66.96.146.129",
+    "City":"Burlington",
+    "State":"MA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.6328,46.516 ]
+    },
+    "properties": {
+    "SiteName":"www.espacestemps.net",
+    "IP_Number":"94.103.96.176",
+    "City":"Lausanne",
+    "State":"Vaud",
+    "Country":"Switzerland"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.5361,38.7228 ]
+    },
+    "properties": {
+    "SiteName":"ws.petango.com",
+    "IP_Number":"137.135.65.146",
+    "City":"Bristow",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.4489,40.8219 ]
+    },
+    "properties": {
+    "SiteName":"www.d20pfsrd.com",
+    "IP_Number":"69.164.217.55",
+    "City":"Cedar Knolls",
+    "State":"NJ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2488,37.5324 ]
+    },
+    "properties": {
+    "SiteName":"www.t-mobile.com",
+    "IP_Number":"107.154.106.99",
+    "City":"Redwood City",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.3659,38.9466 ]
+    },
+    "properties": {
+    "SiteName":"nationalmap.gov",
+    "IP_Number":"137.227.232.150",
+    "City":"Reston",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.0683,49.4478 ]
+    },
+    "properties": {
+    "SiteName":"pixabay.com",
+    "IP_Number":"213.239.228.130",
+    "City":"Nuremberg",
+    "State":"Bayern",
+    "Country":"Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.6762,45.5234 ]
+    },
+    "properties": {
+    "SiteName":"www.makers.com",
+    "IP_Number":"54.70.151.222",
+    "City":"Portland",
+    "State":"OR",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.4664,40.5397 ]
+    },
+    "properties": {
+    "SiteName":"www.briancroxall.net",
+    "IP_Number":"64.237.38.58",
+    "City":"Piscataway",
+    "State":"NJ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3039,37.5383 ]
+    },
+    "properties": {
+    "SiteName":"www.surveymonkey.com",
+    "IP_Number":"64.191.16.50",
+    "City":"San Mateo",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.629,43.7327 ]
+    },
+    "properties": {
+    "SiteName":"glovis.usgs.gov",
+    "IP_Number":"152.61.136.91",
+    "City":"Sioux Falls",
+    "State":"SD",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8879,33.602 ]
+    },
+    "properties": {
+    "SiteName":"www.mrguider.org",
+    "IP_Number":"160.153.59.72",
+    "City":"Scottsdale",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.5443,38.7999 ]
+    },
+    "properties": {
+    "SiteName":"guides.gamepressure.com",
+    "IP_Number":"192.96.204.10",
+    "City":"Manassas",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.3858,49.0047 ]
+    },
+    "properties": {
+    "SiteName":"www.transfrontierafrica.co.uk",
+    "IP_Number":"217.160.0.8",
+    "City":"Karlsruhe",
+    "State":"Baden-Burttemberg",
+    "Country":"Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.2672,53.344 ]
+    },
+    "properties": {
+    "SiteName":"www.thedonkeysanctuary.ie",
+    "IP_Number":"52.49.179.107",
+    "City":"Dublin",
+    "State":"Dublin",
+    "Country":"Ireland"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.8317,-7.5561 ]
+    },
+    "properties": {
+    "SiteName":"isi-ska.ac.id",
+    "IP_Number":"103.104.177.241",
+    "City":"Surakarta",
+    "State":"Jawa Tengah",
+    "Country":"Indonesia"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.2874,53.0038 ]
+    },
+    "properties": {
+    "SiteName":"www.keele.ac.uk",
+    "IP_Number":"160.5.40.87",
+    "City":"Keele",
+    "State":"England",
+    "Country":"UK"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8067,32.7831 ]
+    },
+    "properties": {
+    "SiteName":"www.nps.gov",
+    "IP_Number":"23.59.203.207",
+    "City":"Dallas",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -149.9003,61.2181 ]
+    },
+    "properties": {
+    "SiteName":"lidarportal.dnr.wa.gov",
+    "IP_Number":"137.229.113.90",
+    "City":"Anchorage",
+    "State":"AK",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.7715,45.4312 ]
+    },
+    "properties": {
+    "SiteName":"www.osteopathic.org",
+    "IP_Number":"50.204.91.162",
+    "City":"Tigard",
+    "State":"OR",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.4582,39.2203 ]
+    },
+    "properties": {
+    "SiteName":"provalenslearning.com",
+    "IP_Number":"129.79.149.69",
+    "City":"Bloomington",
+    "State":"IN",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.698,40.7578 ]
+    },
+    "properties": {
+    "SiteName":"www.cyberacoustics.com",
+    "IP_Number":"216.119.75.120",
+    "City":"Lake Success",
+    "State":"NY",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.1746,50.6942 ]
+    },
+    "properties": {
+    "SiteName":"www.dwiggie.com",
+    "IP_Number":"54.36.160.53",
+    "City":"Roubaix",
+    "State":"Hauts-de-France",
+    "Country":"France"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.5779,41.5232 ]
+    },
+    "properties": {
+    "SiteName":"www.jhnewsandguide.com",
+    "IP_Number":"192.104.183.109",
+    "City":"Davenport",
+    "State":"IA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -94.5786,39.0997 ]
+    },
+    "properties": {
+    "SiteName":"2020ok.com",
+    "IP_Number":"74.208.236.67",
+    "City":"Kansas City",
+    "State":"MO",
+    "Country":"USA"
+    }
+  }
+]
+}

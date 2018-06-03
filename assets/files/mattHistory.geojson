@@ -1,0 +1,691 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8897,52.374 ]
+    },
+    "properties": {
+    "SiteName":"www.qgistutorials.com",
+    "IP_Number":"185.199.108.153",
+    "City":"Amsterdam",
+    "State":"Noord-Holland",
+    "Country":"Neatherlands"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8897,52.374 ]
+    },
+    "properties": {
+    "SiteName":"www.setom.github.io",
+    "IP_Number":"185.199.108.153",
+    "City":"Amsterdam",
+    "State":"Noord-Holland",
+    "Country":"Neatherlands"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"www.strava.com",
+    "IP_Number":"54.152.73.117",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4885,39.0341 ]
+    },
+    "properties": {
+    "SiteName":"www.w3schools.com",
+    "IP_Number":"192.229.173.207",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"color.adobe.com",
+    "IP_Number":"34.234.200.6",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"colorbrewer2.org",
+    "IP_Number":"54.231.73.73",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"uwt-gis-geotech.maps.arcgis.com",
+    "IP_Number":"54.209.247.183",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"solecollector.com",
+    "IP_Number":"54.86.99.189",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.4875,39.0437 ]
+    },
+    "properties": {
+    "SiteName":"www.footsteps.bz",
+    "IP_Number":"34.196.120.0",
+    "City":"Ashburn",
+    "State":"VA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.8032,45.4899 ]
+    },
+    "properties": {
+    "SiteName":"www.snovalley.com",
+    "IP_Number":"64.255.238.194",
+    "City":"Beaverton",
+    "State":"OR",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.4105,52.5244 ]
+    },
+    "properties": {
+    "SiteName":"www.digital-geography.com",
+    "IP_Number":"85.214.198.242",
+    "City":"Berlin",
+    "State":"Berlin",
+    "Country":"Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0852,42.3636 ]
+    },
+    "properties": {
+    "SiteName":"www.here.com",
+    "IP_Number":"104.125.228.204",
+    "City":"Cambridge",
+    "State":"MA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8067,32.7831 ]
+    },
+    "properties": {
+    "SiteName":"store.steampowered.com",
+    "IP_Number":"23.56.115.235",
+    "City":"Dallas",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8067,32.7831 ]
+    },
+    "properties": {
+    "SiteName":"www.marriott.com",
+    "IP_Number":"23.56.123.210",
+    "City":"Dallas",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8067,32.7831 ]
+    },
+    "properties": {
+    "SiteName":"www.khou.com",
+    "IP_Number":"104.86.91.134",
+    "City":"Dallas",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.3713,50.4779 ]
+    },
+    "properties": {
+    "SiteName":"nextgis.com",
+    "IP_Number":"78.46.100.76",
+    "City":"Falkenstein",
+    "State":"Sachsen",
+    "Country":"Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.6842,50.1155 ]
+    },
+    "properties": {
+    "SiteName":"internetingishard.com",
+    "IP_Number":"68.70.196.128",
+    "City":"Frankfurt am Main",
+    "State":"\tHessen",
+    "Country":"Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.6842,50.1155 ]
+    },
+    "properties": {
+    "SiteName":"enduro-mtb.com",
+    "IP_Number":"52.29.114.133",
+    "City":"Frankfurt am Main",
+    "State":"Hessen",
+    "Country":"Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.6012,48.3233 ]
+    },
+    "properties": {
+    "SiteName":"www.gifmaker.me",
+    "IP_Number":"88.99.161.8",
+    "City":"Gunzenhausen",
+    "State":"Bayern",
+    "Country":"Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.3913,29.7427 ]
+    },
+    "properties": {
+    "SiteName":"www.flightaware.com",
+    "IP_Number":"70.42.6.250",
+    "City":"Houston",
+    "State":"TX",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.5428,30.1376 ]
+    },
+    "properties": {
+    "SiteName":"www.chucksconnection.com",
+    "IP_Number":"209.237.150.20",
+    "City":"Jacksonville",
+    "State":"FL",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.3967,33.955 ]
+    },
+    "properties": {
+    "SiteName":"nacis.org",
+    "IP_Number":"23.235.213.250",
+    "City":"Los Angeles",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.1895,33.6798 ]
+    },
+    "properties": {
+    "SiteName":"www.elegantthemes.com",
+    "IP_Number":"192.124.249.10",
+    "City":"Menifee",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"carto.com",
+    "IP_Number":"35.224.190.254",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"www.linkedin.com",
+    "IP_Number":"108.174.10.10",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0785,37.406 ]
+    },
+    "properties": {
+    "SiteName":"www.tifosioptics.com",
+    "IP_Number":"104.196.235.64",
+    "City":"Mountain View",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"planet.qgis.org",
+    "IP_Number":"104.27.139.220",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.canva.com",
+    "IP_Number":"104.16.77.22",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.speedsports.me",
+    "IP_Number":"104.27.129.233",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.074,33.4484 ]
+    },
+    "properties": {
+    "SiteName":"www.leatherman.com",
+    "IP_Number":"104.17.41.190",
+    "City":"Phoenix",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.6341,40.2139 ]
+    },
+    "properties": {
+    "SiteName":"paletton.com",
+    "IP_Number":"66.147.240.156",
+    "City":"Provo",
+    "State":"UT",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.1746,50.6942 ]
+    },
+    "properties": {
+    "SiteName":"www.colorhexa.com",
+    "IP_Number":"178.32.117.56",
+    "City":"Roubaix",
+    "State":"Hauts-de-France",
+    "Country":"France"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4194,37.7749 ]
+    },
+    "properties": {
+    "SiteName":"www.meh.com",
+    "IP_Number":"40.78.69.117",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.stackoverflow.com",
+    "IP_Number":"151.101.129.69",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4008,37.7913 ]
+    },
+    "properties": {
+    "SiteName":"en.wikipedia.org",
+    "IP_Number":"198.35.26.96",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"www.wired.com",
+    "IP_Number":"151.101.54.194",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4137,37.7484 ]
+    },
+    "properties": {
+    "SiteName":"anitagraser.com",
+    "IP_Number":"192.0.78.25",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3952,37.7757 ]
+    },
+    "properties": {
+    "SiteName":"gis.stackexchange.com",
+    "IP_Number":"151.101.1.69",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4104,37.774 ]
+    },
+    "properties": {
+    "SiteName":"tweetdeck.twitter.com",
+    "IP_Number":"199.16.156.71",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4194,37.7749 ]
+    },
+    "properties": {
+    "SiteName":"withjoy.com",
+    "IP_Number":"40.112.255.232",
+    "City":"San Francisco",
+    "State":"CA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8879,33.602 ]
+    },
+    "properties": {
+    "SiteName":"codylee.co",
+    "IP_Number":"192.186.224.193",
+    "City":"Scottsdale",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.8879,33.602 ]
+    },
+    "properties": {
+    "SiteName":"compassoutdooradventures.com",
+    "IP_Number":"50.62.89.138",
+    "City":"Scottsdale",
+    "State":"AZ",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3321,47.6062 ]
+    },
+    "properties": {
+    "SiteName":"www.techrepublic.com",
+    "IP_Number":"23.44.160.72",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.292,47.6639 ]
+    },
+    "properties": {
+    "SiteName":"www.tacoma.uw.edu",
+    "IP_Number":"128.208.252.209",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3462,47.6275 ]
+    },
+    "properties": {
+    "SiteName":"www.sessions.edu",
+    "IP_Number":"52.84.16.211",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3321,47.6062 ]
+    },
+    "properties": {
+    "SiteName":"tvsport.getapps1.com",
+    "IP_Number":"50.22.179.15",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3321,47.6062 ]
+    },
+    "properties": {
+    "SiteName":"www.amazon.com",
+    "IP_Number":"23.74.61.104",
+    "City":"Seattle",
+    "State":"WA",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.5154,28.0074 ]
+    },
+    "properties": {
+    "SiteName":"resizeimage.net",
+    "IP_Number":"23.111.187.250",
+    "City":"Tampa",
+    "State":"FL",
+    "Country":"USA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.3608,-7.7828 ]
+    },
+    "properties": {
+    "SiteName":"english.uny.ac.id",
+    "IP_Number":"101.203.168.83",
+    "City":"Yogyakarta",
+    "State":"",
+    "Country":"Indonesia"
+    }
+  }
+]
+}

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset='utf-8' />
-        <title>Create and style clusters</title>
+        <title>Map My (Browser) History</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
@@ -108,7 +108,9 @@
                             30,
                             5,
                             40
-                        ]
+                        ],
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
                     }
                 });
                 map.addLayer({
@@ -136,7 +138,6 @@
                  }
                  });
                  */
-
                 //Nate Points Data
                 map.addSource("natePoints", {
                     type: "geojson",
@@ -173,7 +174,9 @@
                             30,
                             5,
                             40
-                        ]
+                        ],
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
                     }
                 });
                 map.addLayer({
@@ -188,7 +191,6 @@
                         "circle-stroke-color": "#fff"
                     }
                 });
-
                 //Anna Points Data
                 map.addSource("annaPoints", {
                     type: "geojson",
@@ -225,7 +227,9 @@
                             30,
                             5,
                             40
-                        ]
+                        ],
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
                     }
                 });
                 map.addLayer({
@@ -240,7 +244,6 @@
                         "circle-stroke-color": "#fff"
                     }
                 });
-
                 //Daman Points Data
                 map.addSource("damanPoints", {
                     type: "geojson",
@@ -277,7 +280,9 @@
                             30,
                             5,
                             40
-                        ]
+                        ],
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
                     }
                 });
                 map.addLayer({
@@ -291,6 +296,35 @@
                         "circle-stroke-width": 1,
                         "circle-stroke-color": "#fff"
                     }
+                });
+
+                //Matt Cluster zoom/click functionality
+                map.on('click', 'Matt', function (e) {
+                    map.flyTo({
+                        center: e.features[0].geometry.coordinates,
+                        zoom: map.getZoom() + 2
+                    });
+                });
+                //Anna Cluster zoom/click functionality
+                map.on('click', 'Anna', function (e) {
+                    map.flyTo({
+                        center: e.features[0].geometry.coordinates,
+                        zoom: map.getZoom() + 2
+                    });
+                });
+                //Nate Cluster zoom/click functionality
+                map.on('click', 'Nate', function (e) {
+                    map.flyTo({
+                        center: e.features[0].geometry.coordinates,
+                        zoom: map.getZoom() + 2
+                    });
+                });
+                //Daman Cluster zoom/click functionality
+                map.on('click', 'Daman', function (e) {
+                    map.flyTo({
+                        center: e.features[0].geometry.coordinates,
+                        zoom: map.getZoom() + 2
+                    });
                 });
 
                 //Matt Points click functionality
@@ -362,7 +396,7 @@
                 //Daman Points click functionality
                 map.on('click', 'DamanPts', function (e) {
                     var coordinates = e.features[0].geometry.coordinates.slice();
-                    var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP + "</p>";
+                    var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
                     // Ensure that if the map is zoomed out such that multiple
                     // copies of the feature are visible, the popup appears
                     // over the copy being pointed to.
@@ -385,7 +419,7 @@
             });
 
             //Toggle the layers on/off
-            var toggleableLayerIds = ['Anna', 'Matt', 'Nate'];
+            var toggleableLayerIds = ['Anna', 'Daman', 'Matt', 'Nate'];
 
             for (var i = 0; i < toggleableLayerIds.length; i++) {
                 var id = toggleableLayerIds[i];

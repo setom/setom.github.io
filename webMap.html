@@ -51,6 +51,10 @@
                 background: #3074a4;
             }
 
+            .mapboxgl-popup {
+                max-width: 400px;
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            }
         </style>
     </head>
     <body>
@@ -63,7 +67,7 @@
             var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/mapbox/dark-v9',
-                center: [0, 30],
+                center: [2, 30],
                 zoom: 1.5
             });
 
@@ -90,24 +94,36 @@
                         "circle-color": [
                             "step",
                             ["get", "point_count"],
-                            "#51bbd6",
+                            "#4daf4a",
                             2,
-                            "#51bbd6",
+                            "#4daf4a",
                             5,
-                            "#51bbd6"
+                            "#4daf4a"
                         ],
                         "circle-radius": [
                             "step",
                             ["get", "point_count"],
                             20,
-                            100,
+                            2,
                             30,
-                            750,
+                            5,
                             40
                         ]
                     }
                 });
-                /*
+                map.addLayer({
+                    id: "MattPts",
+                    type: "circle",
+                    source: "mattPoints",
+                    filter: ["!has", "point_count"],
+                    paint: {
+                        "circle-color": "#4daf4a",
+                        "circle-radius": 4,
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
+                    }
+                });
+                /*//Code for adding numbers to the clusters
                  map.addLayer({
                  id: "cluster-count",
                  type: "symbol",
@@ -120,18 +136,6 @@
                  }
                  });
                  */
-                map.addLayer({
-                    id: "MattPts",
-                    type: "circle",
-                    source: "mattPoints",
-                    filter: ["!has", "point_count"],
-                    paint: {
-                        "circle-color": "#11b4da",
-                        "circle-radius": 4,
-                        "circle-stroke-width": 1,
-                        "circle-stroke-color": "#fff"
-                    }
-                });
 
                 //Nate Points Data
                 map.addSource("natePoints", {
@@ -155,19 +159,19 @@
                         "circle-color": [
                             "step",
                             ["get", "point_count"],
-                            "#f28cb1",
+                            "#377eb8",
                             2,
-                            "#f28cb1",
+                            "#377eb8",
                             5,
-                            "#f28cb1"
+                            "#377eb8"
                         ],
                         "circle-radius": [
                             "step",
                             ["get", "point_count"],
                             20,
-                            100,
+                            2,
                             30,
-                            750,
+                            5,
                             40
                         ]
                     }
@@ -178,15 +182,136 @@
                     source: "natePoints",
                     filter: ["!has", "point_count"],
                     paint: {
-                        "circle-color": "#f28cb1",
+                        "circle-color": "#377eb8",
                         "circle-radius": 4,
                         "circle-stroke-width": 1,
                         "circle-stroke-color": "#fff"
                     }
                 });
+
+                //Anna Points Data
+                map.addSource("annaPoints", {
+                    type: "geojson",
+                    data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/annaHistory.geojson",
+                    cluster: true,
+                    clusterMaxZoom: 14, // Max zoom to cluster points on
+                    clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+                });
+                map.addLayer({
+                    id: "Anna",
+                    type: "circle",
+                    source: "annaPoints",
+                    filter: ["has", "point_count"],
+                    paint: {
+                        // Use step expressions (https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+                        // with three steps to implement three types of circles:
+                        //   * Blue, 20px circles when point count is less than 100
+                        //   * Yellow, 30px circles when point count is between 100 and 750
+                        //   * Pink, 40px circles when point count is greater than or equal to 750
+                        "circle-color": [
+                            "step",
+                            ["get", "point_count"],
+                            "#e41a1c",
+                            2,
+                            "#e41a1c",
+                            5,
+                            "#e41a1c"
+                        ],
+                        "circle-radius": [
+                            "step",
+                            ["get", "point_count"],
+                            20,
+                            2,
+                            30,
+                            5,
+                            40
+                        ]
+                    }
+                });
+                map.addLayer({
+                    id: "AnnaPts",
+                    type: "circle",
+                    source: "annaPoints",
+                    filter: ["!has", "point_count"],
+                    paint: {
+                        "circle-color": "#e41a1c",
+                        "circle-radius": 4,
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
+                    }
+                });
+
+                //Matt Points click functionality
+                map.on('click', 'MattPts', function (e) {
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+                    var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
+                    // Ensure that if the map is zoomed out such that multiple
+                    // copies of the feature are visible, the popup appears
+                    // over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+
+                    new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML(description)
+                            .addTo(map);
+                });
+                map.on('mouseenter', 'MattPts', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                map.on('mouseleave', 'MattPts', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+                //Anna Points click functionality
+                map.on('click', 'AnnaPts', function (e) {
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+                    var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
+                    // Ensure that if the map is zoomed out such that multiple
+                    // copies of the feature are visible, the popup appears
+                    // over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+
+                    new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML(description)
+                            .addTo(map);
+                });
+                map.on('mouseenter', 'AnnaPts', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                map.on('mouseleave', 'AnnaPts', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+                //Nate Points click functionality
+                map.on('click', 'NatePts', function (e) {
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+                    var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
+                    // Ensure that if the map is zoomed out such that multiple
+                    // copies of the feature are visible, the popup appears
+                    // over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+
+                    new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML(description)
+                            .addTo(map);
+                });
+                map.on('mouseenter', 'NatePts', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                map.on('mouseleave', 'NatePts', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+                
             });
 
-            var toggleableLayerIds = ['Nate', 'Matt'];
+            //Toggle the layers on/off
+            var toggleableLayerIds = ['Anna', 'Matt', 'Nate'];
 
             for (var i = 0; i < toggleableLayerIds.length; i++) {
                 var id = toggleableLayerIds[i];
@@ -205,12 +330,12 @@
 
                     if (visibility === 'visible') {
                         map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-                        map.setLayoutProperty(clickedLayer+"Pts", 'visibility', 'none');
+                        map.setLayoutProperty(clickedLayer + "Pts", 'visibility', 'none');
                         this.className = '';
                     } else {
                         this.className = 'active';
                         map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-                        map.setLayoutProperty(clickedLayer+"Pts", 'visibility', 'visible');
+                        map.setLayoutProperty(clickedLayer + "Pts", 'visibility', 'visible');
                     }
                 };
 

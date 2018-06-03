@@ -241,6 +241,58 @@
                     }
                 });
 
+                //Daman Points Data
+                map.addSource("damanPoints", {
+                    type: "geojson",
+                    data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/damanHistory.geojson",
+                    cluster: true,
+                    clusterMaxZoom: 14, // Max zoom to cluster points on
+                    clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+                });
+                map.addLayer({
+                    id: "Daman",
+                    type: "circle",
+                    source: "damanPoints",
+                    filter: ["has", "point_count"],
+                    paint: {
+                        // Use step expressions (https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+                        // with three steps to implement three types of circles:
+                        //   * Blue, 20px circles when point count is less than 100
+                        //   * Yellow, 30px circles when point count is between 100 and 750
+                        //   * Pink, 40px circles when point count is greater than or equal to 750
+                        "circle-color": [
+                            "step",
+                            ["get", "point_count"],
+                            "#984ea3",
+                            2,
+                            "#984ea3",
+                            5,
+                            "#984ea3"
+                        ],
+                        "circle-radius": [
+                            "step",
+                            ["get", "point_count"],
+                            20,
+                            2,
+                            30,
+                            5,
+                            40
+                        ]
+                    }
+                });
+                map.addLayer({
+                    id: "DamanPts",
+                    type: "circle",
+                    source: "damanPoints",
+                    filter: ["!has", "point_count"],
+                    paint: {
+                        "circle-color": "#984ea3",
+                        "circle-radius": 4,
+                        "circle-stroke-width": 1,
+                        "circle-stroke-color": "#fff"
+                    }
+                });
+
                 //Matt Points click functionality
                 map.on('click', 'MattPts', function (e) {
                     var coordinates = e.features[0].geometry.coordinates.slice();
@@ -307,7 +359,29 @@
                 map.on('mouseleave', 'NatePts', function () {
                     map.getCanvas().style.cursor = '';
                 });
-                
+                //Daman Points click functionality
+                map.on('click', 'DamanPts', function (e) {
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+                    var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP + "</p>";
+                    // Ensure that if the map is zoomed out such that multiple
+                    // copies of the feature are visible, the popup appears
+                    // over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+
+                    new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML(description)
+                            .addTo(map);
+                });
+                map.on('mouseenter', 'DamanPts', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                map.on('mouseleave', 'DamanPts', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+
             });
 
             //Toggle the layers on/off

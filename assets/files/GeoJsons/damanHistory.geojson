@@ -8,8 +8,8 @@
        "coordinates":  [ -122.6762,45.5234 ]
     },
     "properties": {
-    "Site name":"http://www.espn.com/",
-    "IP":"54.69.213.152",
+    "SiteName":"http://www.espn.com/",
+    "IP_Number":"54.69.213.152",
     "City":"Portland",
     "State":"OR",
     "Country":"USA"
@@ -22,8 +22,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.barnesandnoble.com",
-    "IP":"23.45.86.226",
+    "SiteName":"www.barnesandnoble.com",
+    "IP_Number":"23.45.86.226",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -36,8 +36,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.expedia.com",
-    "IP":"23.59.195.53",
+    "SiteName":"www.expedia.com",
+    "IP_Number":"23.59.195.53",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -50,8 +50,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.realmadrid.com",
-    "IP":"104.86.91.141",
+    "SiteName":"www.realmadrid.com",
+    "IP_Number":"104.86.91.141",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -64,8 +64,8 @@
        "coordinates":  [ -121.895,37.3394 ]
     },
     "properties": {
-    "Site name":"www.apple.com",
-    "IP":"104.92.130.192",
+    "SiteName":"www.apple.com",
+    "IP_Number":"104.92.130.192",
     "City":"San Jose",
     "State":"CA",
     "Country":"USA"
@@ -78,8 +78,8 @@
        "coordinates":  [ -122.292,47.6639 ]
     },
     "properties": {
-    "Site name":"www.washington.edu",
-    "IP":"128.95.155.135",
+    "SiteName":"www.washington.edu",
+    "IP_Number":"128.95.155.135",
     "City":"Seattle",
     "State":"WA",
     "Country":"USA"
@@ -92,8 +92,8 @@
        "coordinates":  [ -84.1594,39.6284 ]
     },
     "properties": {
-    "Site name":"www.carfax.com",
-    "IP":"216.117.92.113",
+    "SiteName":"www.carfax.com",
+    "IP_Number":"216.117.92.113",
     "City":"Centerville",
     "State":"OH",
     "Country":"USA"
@@ -106,8 +106,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.geico.com",
-    "IP":"23.56.116.22",
+    "SiteName":"www.geico.com",
+    "IP_Number":"23.56.116.22",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -120,8 +120,8 @@
        "coordinates":  [ -118.2437,34.0522 ]
     },
     "properties": {
-    "Site name":"www.hbo.com",
-    "IP":"8.254.207.105",
+    "SiteName":"www.hbo.com",
+    "IP_Number":"8.254.207.105",
     "City":"Los Angeles",
     "State":"CA",
     "Country":"USA"
@@ -134,8 +134,8 @@
        "coordinates":  [ -122.6762,45.5234 ]
     },
     "properties": {
-    "Site name":"www.netflix.com",
-    "IP":"35.160.112.124",
+    "SiteName":"www.netflix.com",
+    "IP_Number":"35.160.112.124",
     "City":"Portland",
     "State":"OR",
     "Country":"USA"
@@ -148,8 +148,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.samsung.com",
-    "IP":"23.56.119.46",
+    "SiteName":"www.samsung.com",
+    "IP_Number":"23.56.119.46",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -162,8 +162,8 @@
        "coordinates":  [ -118.2437,34.0522 ]
     },
     "properties": {
-    "Site name":"auctions.yahoo.co.jp",
-    "IP":"183.79.249.252",
+    "SiteName":"auctions.yahoo.co.jp",
+    "IP_Number":"183.79.249.252",
     "City":"Los Angeles",
     "State":"CA",
     "Country":"USA"
@@ -176,8 +176,8 @@
        "coordinates":  [ -122.3952,37.7757 ]
     },
     "properties": {
-    "Site name":"github.com",
-    "IP":"192.30.255.112",
+    "SiteName":"github.com",
+    "IP_Number":"192.30.255.112",
     "City":"San Francisco",
     "State":"CA",
     "Country":"USA"
@@ -190,8 +190,8 @@
        "coordinates":  [ -77.4875,39.0437 ]
     },
     "properties": {
-    "Site name":"www.cryptokitties.co",
-    "IP":"52.72.80.190",
+    "SiteName":"www.cryptokitties.co",
+    "IP_Number":"52.72.80.190",
     "City":"Ashburn",
     "State":"VA",
     "Country":"USA"
@@ -204,8 +204,8 @@
        "coordinates":  [ -122.1936,37.4369 ]
     },
     "properties": {
-    "Site name":"www.instagram.com",
-    "IP":"157.240.22.37",
+    "SiteName":"www.instagram.com",
+    "IP_Number":"157.240.22.37",
     "City":"Menlo Park",
     "State":"CA",
     "Country":"USA"
@@ -218,8 +218,8 @@
        "coordinates":  [ -122.4104,37.774 ]
     },
     "properties": {
-    "Site name":"twitter.com",
-    "IP":"104.244.42.65",
+    "SiteName":"twitter.com",
+    "IP_Number":"104.244.42.65",
     "City":"San Francisco",
     "State":"CA",
     "Country":"USA"
@@ -232,8 +232,8 @@
        "coordinates":  [ -122.1936,37.4369 ]
     },
     "properties": {
-    "Site name":"www.facebook.com",
-    "IP":"157.240.22.39",
+    "SiteName":"www.facebook.com",
+    "IP_Number":"157.240.22.39",
     "City":"Menlo Park",
     "State":"CA",
     "Country":"USA"
@@ -246,8 +246,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.jeep.com",
-    "IP":"23.32.23.195",
+    "SiteName":"www.jeep.com",
+    "IP_Number":"23.32.23.195",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -260,8 +260,8 @@
        "coordinates":  [ -77.0508,38.9016 ]
     },
     "properties": {
-    "Site name":"www.kangarooweddings.com",
-    "IP":"38.18.229.128",
+    "SiteName":"www.kangarooweddings.com",
+    "IP_Number":"38.18.229.128",
     "City":"Washington",
     "State":"DC",
     "Country":"USA"
@@ -274,8 +274,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.bhphotovideo.com",
-    "IP":"23.38.228.43",
+    "SiteName":"www.bhphotovideo.com",
+    "IP_Number":"23.38.228.43",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -288,8 +288,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.sony.com",
-    "IP":"23.38.236.31",
+    "SiteName":"www.sony.com",
+    "IP_Number":"23.38.236.31",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -302,8 +302,8 @@
        "coordinates":  [ -122.0785,37.406 ]
     },
     "properties": {
-    "Site name":"www.youtube.com",
-    "IP":"172.217.6.78",
+    "SiteName":"www.youtube.com",
+    "IP_Number":"172.217.6.78",
     "City":"Mountain View",
     "State":"CA",
     "Country":"USA"
@@ -316,8 +316,8 @@
        "coordinates":  [ -96.8067,32.7831 ]
     },
     "properties": {
-    "Site name":"www.esri.com",
-    "IP":"23.45.86.178",
+    "SiteName":"www.esri.com",
+    "IP_Number":"23.45.86.178",
     "City":"Dallas",
     "State":"TX",
     "Country":"USA"
@@ -330,8 +330,8 @@
        "coordinates":  [ 4.8897,52.374 ]
     },
     "properties": {
-    "Site name":"leafletjs.com",
-    "IP":"185.199.109.153",
+    "SiteName":"leafletjs.com",
+    "IP_Number":"185.199.109.153",
     "City":"Amsterdam",
     "State":"NH",
     "Country":"Netherlands"
@@ -344,8 +344,8 @@
        "coordinates":  [ -122.3952,37.7757 ]
     },
     "properties": {
-    "Site name":"www.mapbox.com",
-    "IP":"151.101.52.143",
+    "SiteName":"www.mapbox.com",
+    "IP_Number":"151.101.52.143",
     "City":"San Francisco",
     "State":"CA",
     "Country":"USA"
@@ -358,8 +358,8 @@
        "coordinates":  [ -111.6341,40.2139 ]
     },
     "properties": {
-    "Site name":"www.paletton.com",
-    "IP":"66.147.240.156",
+    "SiteName":"www.paletton.com",
+    "IP_Number":"66.147.240.156",
     "City":"Provo",
     "State":"UT",
     "Country":"USA"
@@ -372,8 +372,8 @@
        "coordinates":  [ -121.895,37.3394 ]
     },
     "properties": {
-    "Site name":"www.dell.com",
-    "IP":"104.80.207.216",
+    "SiteName":"www.dell.com",
+    "IP_Number":"104.80.207.216",
     "City":"San Jose",
     "State":"CA",
     "Country":"USA"
@@ -386,8 +386,8 @@
        "coordinates":  [ -119.8525,47.2343 ]
     },
     "properties": {
-    "Site name":"www.icbmotorsport.com",
-    "IP":"98.136.241.156",
+    "SiteName":"www.icbmotorsport.com",
+    "IP_Number":"98.136.241.156",
     "City":"Quincy",
     "State":"WA",
     "Country":"USA"
@@ -400,8 +400,8 @@
        "coordinates":  [ -75.6929,45.4207 ]
     },
     "properties": {
-    "Site name":"notorious-society.us",
-    "IP":"23.227.38.32",
+    "SiteName":"notorious-society.us",
+    "IP_Number":"23.227.38.32",
     "City":"Ottawa",
     "State":"ON",
     "Country":"Canada"
@@ -414,8 +414,8 @@
        "coordinates":  [ -77.4728,39.0481 ]
     },
     "properties": {
-    "Site name":"www.shopify.com",
-    "IP":"50.17.21.142",
+    "SiteName":"www.shopify.com",
+    "IP_Number":"50.17.21.142",
     "City":"Ashburn",
     "State":"VA",
     "Country":"USA"
@@ -428,8 +428,8 @@
        "coordinates":  [ -122.3952,37.7757 ]
     },
     "properties": {
-    "Site name":"www.nytimes.com",
-    "IP":"151.101.41.164",
+    "SiteName":"www.nytimes.com",
+    "IP_Number":"151.101.41.164",
     "City":"San Francisco",
     "State":"CA",
     "Country":"USA"
@@ -442,8 +442,8 @@
        "coordinates":  [ -112.074,33.4484 ]
     },
     "properties": {
-    "Site name":"www.1077theend.com",
-    "IP":"104.16.95.13",
+    "SiteName":"www.1077theend.com",
+    "IP_Number":"104.16.95.13",
     "City":"Phoenix",
     "State":"AZ",
     "Country":"USA"
@@ -456,8 +456,8 @@
        "coordinates":  [ -118.2437,34.0522 ]
     },
     "properties": {
-    "Site name":"www.nba.com",
-    "IP":"23.43.178.240",
+    "SiteName":"www.nba.com",
+    "IP_Number":"23.43.178.240",
     "City":"Los Angeles",
     "State":"CA",
     "Country":"USA"
@@ -470,8 +470,8 @@
        "coordinates":  [ -122.2007,47.6104 ]
     },
     "properties": {
-    "Site name":"www.bellevuecollege.edu",
-    "IP":"134.39.81.15",
+    "SiteName":"www.bellevuecollege.edu",
+    "IP_Number":"134.39.81.15",
     "City":"Bellevue",
     "State":"WA",
     "Country":"USA"
@@ -484,8 +484,8 @@
        "coordinates":  [ -112.074,33.4484 ]
     },
     "properties": {
-    "Site name":"stockx.com",
-    "IP":"104.20.58.35",
+    "SiteName":"stockx.com",
+    "IP_Number":"104.20.58.35",
     "City":"Phoenix",
     "State":"AZ",
     "Country":"USA"
@@ -498,8 +498,8 @@
        "coordinates":  [ -122.0785,37.406 ]
     },
     "properties": {
-    "Site name":"www.google.com",
-    "IP":"172.217.164.100",
+    "SiteName":"www.google.com",
+    "IP_Number":"172.217.164.100",
     "City":"Mountain View",
     "State":"CA",
     "Country":"USA"
@@ -512,8 +512,8 @@
        "coordinates":  [ -84.2588,30.429 ]
     },
     "properties": {
-    "Site name":"www.myflorida.com",
-    "IP":"199.250.30.229",
+    "SiteName":"www.myflorida.com",
+    "IP_Number":"199.250.30.229",
     "City":"Tallahassee",
     "State":"FL",
     "Country":"USA"
@@ -526,8 +526,8 @@
        "coordinates":  [ 139.6917,35.6895 ]
     },
     "properties": {
-    "Site name":"www.326power.co.jp",
-    "IP":"210.128.29.175",
+    "SiteName":"www.326power.co.jp",
+    "IP_Number":"210.128.29.175",
     "City":"Tokyo",
     "State":"Tokyo",
     "Country":"Japan"
@@ -540,8 +540,8 @@
        "coordinates":  [ -1.0827,53.9576 ]
     },
     "properties": {
-    "Site name":"www.heathrow.com",
-    "IP":"83.98.103.14",
+    "SiteName":"www.heathrow.com",
+    "IP_Number":"83.98.103.14",
     "City":"York",
     "State":"England",
     "Country":"United Kingdom"

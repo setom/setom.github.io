@@ -6,92 +6,6 @@ var map = new mapboxgl.Map({
     zoom: 1.5
 });
 
-//Data for the lines
-// Tacoma
-var origin = [-122.4443, 47.2529];
-
-// Everyone's destinations
-var destinationMatt = [
-    [4.8897, 52.374],
-    [-77.4875, 39.0437],
-    [-122.8032, 45.4899],
-    [13.4105, 52.5244],
-    [-71.0852, 42.3636],
-    [-96.8067, 32.7831],
-    [12.3713, 50.4779],
-    [8.6842, 50.1155],
-    [11.6012, 48.3233],
-    [-95.3913, 29.7427],
-    [-81.5428, 30.1376],
-    [-118.3967, 33.955],
-    [-117.1895, 33.6798],
-    [-122.0785, 37.406],
-    [-112.074, 33.4484],
-    [-111.6341, 40.2139],
-    [3.1746, 50.6942],
-    [-122.4194, 37.7749],
-    [-111.8879, 33.602],
-    [-122.3321, 47.6062],
-    [-82.5154, 28.0074],
-    [110.3608, -7.7828]
-];
-
-var destinationAnna = [
-    [4.8897, 52.374],
-    [-149.9003, 61.2181],
-    [-77.4875, 39.0437],
-    [-84.388, 33.749],
-    [-73.8659, 45.3168],
-    [-86.4582, 39.2203],
-    [-105.27, 40.015],
-    [-77.5361, 38.7228],
-    [-71.2011, 42.5085],
-    [-86.1602, 39.9673],
-    [-74.4489, 40.8219],
-    [-96.8067, 32.7831],
-    [-90.5779, 41.5232],
-    [-6.2672, 53.344],
-    [-84.4921, 42.6512],
-    [-118.4055, 33.9222],
-    [-95.4741, 29.8312],
-    [-94.5786, 39.0997],
-    [8.3858, 49.0047],
-    [-2.2874, 53.0038],
-    [-73.698, 40.7578],
-    [6.6328, 46.516],
-    [-118.3967, 33.955],
-    [-77.5443, 38.7999],
-    [-96.5976, 39.1957],
-    [-122.0464, 47.3927],
-    [-92.0452, 32.5483],
-    [-122.0785, 37.406],
-    [-74.0121, 40.8043],
-    [11.0683, 49.4478],
-    [-122.8698, 47.023],
-    [-112.074, 33.4484],
-    [-74.4664, 40.5397],
-    [-121.8948, 37.6853],
-    [-122.6762, 45.5234],
-    [-111.6341, 40.2139],
-    [-117.1721, 34.0488],
-    [-86.6546, 34.6333],
-    [-122.2488, 37.5324],
-    [-77.3659, 38.9466],
-    [3.1746, 50.6942],
-    [-122.4137, 37.7484],
-    [-121.895, 37.3394],
-    [-122.3039, 37.5383],
-    [-111.8879, 33.602],
-    [-122.292, 47.6639],
-    [-96.629, 43.7327],
-    [-77.4286, 39.0062],
-    [110.8317, -7.5561],
-    [-122.7715, 45.4312],
-    [-87.5402, 33.2162],
-    [-77.834, 40.87],
-    [16.3721, 48.2085]
-];
-
 var destinationNate = [
     [-77.4875, 39.0437],
     [-71.2011, 42.5085],
@@ -138,86 +52,10 @@ var destinationDaman = [
     [-84.2588, 30.429],
     [139.6917, 35.6895],
     [-77.0508, 38.9016],
-    [-1.0827, 53.9576],
+    [-1.0827, 53.9576]
 ];
 
-//Make the Routes Lines
-routesMatt = [];
-routesAnna = [];
-routesNate = [];
-routesDaman = [];
-//Make Matt Routes
-for (var i = 0; i < destinationMatt.length; i++) {
-    // A simple line from origin to destination.
-    var route = {
-        "type": "FeatureCollection",
-        "features": [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "LineString",
-                    "coordinates": [
-                        origin,
-                        destinationMatt[i]
-                    ]
-                }
-            }]
-    };
-    routesMatt.push(route);
-}
-//Make Anna Routes
-for (var i = 0; i < destinationAnna.length; i++) {
-    // A simple line from origin to destination.
-    var route = {
-        "type": "FeatureCollection",
-        "features": [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "LineString",
-                    "coordinates": [
-                        origin,
-                        destinationAnna[i]
-                    ]
-                }
-            }]
-    };
-    routesAnna.push(route);
-}
-//Make Nate Routes
-for (var i = 0; i < destinationNate.length; i++) {
-    // A simple line from origin to destination.
-    var route = {
-        "type": "FeatureCollection",
-        "features": [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "LineString",
-                    "coordinates": [
-                        origin,
-                        destinationNate[i]
-                    ]
-                }
-            }]
-    };
-    routesNate.push(route);
-}
-//Make Daman Routes
-for (var i = 0; i < destinationNate.length; i++) {
-    // A simple line from origin to destination.
-    var route = {
-        "type": "FeatureCollection",
-        "features": [{
-                "type": "Feature",
-                "geometry": {
-                    "type": "LineString",
-                    "coordinates": [
-                        origin,
-                        destinationDaman[i]
-                    ]
-                }
-            }]
-    };
-    routesDaman.push(route);
-}
+
 
 map.on('load', function () {
     //Matt Points Data
@@ -446,7 +284,7 @@ map.on('load', function () {
         }
     });
 
-
+    //Matt Routes Data
     map.addSource('mattRoutes', {
         type: "geojson", 
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/mattRoutes.geojson'
@@ -457,60 +295,38 @@ map.on('load', function () {
         source: "mattRoutes",
         "paint": {
             "line-color": "#888",
-            "line-width": 8
+            "line-width": 1
         }
     });
     //Anna Routes Data
-    for (var i = 0; i < routesAnna.length; i++) {
-        map.addSource('routeA' + i, {
-            "type": "geojson",
-            "data": routesAnna[i]
-        });
+        map.addSource('annaRoutes', {
+        type: "geojson", 
+        data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/annaRoutes.geojson'
+    });
+    map.addLayer({
+        id: "AnnaRoutes",
+        type: "line",
+        source: "annaRoutes",
+        "paint": {
+            "line-color": "#888",
+            "line-width": 1
+        }
+    });
+        //Nate Routes Data
+        map.addSource('nateRoutes', {
+        type: "geojson", 
+        data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/nateRoutes.geojson'
+    });
+    map.addLayer({
+        id: "NateRoutes",
+        type: "line",
+        source: "nateRoutes",
+        "paint": {
+            "line-color": "#888",
+            "line-width": 1
+        }
+    });
 
-        map.addLayer({
-            "id": "routeA" + i,
-            "source": "routeA" + i,
-            "type": "line",
-            "paint": {
-                "line-width": 1.5,
-                "line-color": "#FF0000"
-            }
-        });
-    }
-    //Nate Routes Data
-    for (var i = 0; i < routesNate.length; i++) {
-        map.addSource('routeN' + i, {
-            "type": "geojson",
-            "data": routesNate[i]
-        });
-
-        map.addLayer({
-            "id": "routeN" + i,
-            "source": "routeN" + i,
-            "type": "line",
-            "paint": {
-                "line-width": 1.5,
-                "line-color": "#0000FF"
-            }
-        });
-    }
-    //Daman Routes Data
-    for (var i = 0; i < routesDaman.length; i++) {
-        map.addSource('routeD' + i, {
-            "type": "geojson",
-            "data": routesDaman[i]
-        });
-
-        map.addLayer({
-            "id": "routeD" + i,
-            "source": "routeD" + i,
-            "type": "line",
-            "paint": {
-                "line-width": 1.5,
-                "line-color": "#FFFFFF"
-            }
-        });
-    }
 
     //Matt Cluster zoom/click functionality
     map.on('click', 'Matt', function (e) {

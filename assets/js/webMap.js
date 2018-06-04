@@ -6,31 +6,10 @@ var map = new mapboxgl.Map({
     zoom: 1.5
 });
 
-
-var destinationDaman = [
-    [4.8897, 52.374],
-    [-77.4875, 39.0437],
-    [-122.2007, 47.6104],
-    [-84.1594, 39.6284],
-    [-96.8067, 32.7831],
-    [-118.2437, 34.0522],
-    [-122.1936, 37.4369],
-    [-122.0785, 37.406],
-    [-75.6929, 45.4207],
-    [-112.074, 33.4484],
-    [-122.6762, 45.5234],
-    [-111.6341, 40.2139],
-    [-119.8525, 47.2343],
-    [-122.3952, 37.7757],
-    [-121.895, 37.3394],
-    [-122.292, 47.6639],
-    [-84.2588, 30.429],
-    [139.6917, 35.6895],
-    [-77.0508, 38.9016],
-    [-1.0827, 53.9576]
-];
-
-
+var mattColour = '#8dd3c7';
+var annaColour = '#ffffb3';
+var nateColour = '#bebada';
+var damanColour = '#fb8072';
 
 map.on('load', function () {
     //Matt Points Data
@@ -55,11 +34,11 @@ map.on('load', function () {
             "circle-color": [
                 "step",
                 ["get", "point_count"],
-                "#4daf4a",
+                mattColour,
                 2,
-                "#4daf4a",
+                mattColour,
                 5,
-                "#4daf4a"
+                mattColour
             ],
             "circle-radius": [
                 "step",
@@ -80,7 +59,7 @@ map.on('load', function () {
         source: "mattPoints",
         filter: ["!has", "point_count"],
         paint: {
-            "circle-color": "#4daf4a",
+            "circle-color": mattColour,
             "circle-radius": 4,
             "circle-stroke-width": 1,
             "circle-stroke-color": "#fff"
@@ -121,11 +100,11 @@ map.on('load', function () {
             "circle-color": [
                 "step",
                 ["get", "point_count"],
-                "#377eb8",
+                nateColour,
                 2,
-                "#377eb8",
+                nateColour,
                 5,
-                "#377eb8"
+                nateColour
             ],
             "circle-radius": [
                 "step",
@@ -146,7 +125,7 @@ map.on('load', function () {
         source: "natePoints",
         filter: ["!has", "point_count"],
         paint: {
-            "circle-color": "#377eb8",
+            "circle-color": nateColour,
             "circle-radius": 4,
             "circle-stroke-width": 1,
             "circle-stroke-color": "#fff"
@@ -174,11 +153,11 @@ map.on('load', function () {
             "circle-color": [
                 "step",
                 ["get", "point_count"],
-                "#e41a1c",
+                annaColour,
                 2,
-                "#e41a1c",
+                annaColour,
                 5,
-                "#e41a1c"
+                annaColour
             ],
             "circle-radius": [
                 "step",
@@ -199,7 +178,7 @@ map.on('load', function () {
         source: "annaPoints",
         filter: ["!has", "point_count"],
         paint: {
-            "circle-color": "#e41a1c",
+            "circle-color": annaColour,
             "circle-radius": 4,
             "circle-stroke-width": 1,
             "circle-stroke-color": "#fff"
@@ -227,11 +206,11 @@ map.on('load', function () {
             "circle-color": [
                 "step",
                 ["get", "point_count"],
-                "#984ea3",
+                damanColour,
                 2,
-                "#984ea3",
+                damanColour,
                 5,
-                "#984ea3"
+                damanColour
             ],
             "circle-radius": [
                 "step",
@@ -252,7 +231,7 @@ map.on('load', function () {
         source: "damanPoints",
         filter: ["!has", "point_count"],
         paint: {
-            "circle-color": "#984ea3",
+            "circle-color": damanColour,
             "circle-radius": 4,
             "circle-stroke-width": 1,
             "circle-stroke-color": "#fff"
@@ -269,7 +248,7 @@ map.on('load', function () {
         type: "line",
         source: "mattRoutes",
         "paint": {
-            "line-color": "#888",
+            "line-color": mattColour,
             "line-width": 1
         }
     });
@@ -283,7 +262,7 @@ map.on('load', function () {
         type: "line",
         source: "annaRoutes",
         "paint": {
-            "line-color": "#888",
+            "line-color": annaColour,
             "line-width": 1
         }
     });
@@ -297,7 +276,7 @@ map.on('load', function () {
         type: "line",
         source: "nateRoutes",
         "paint": {
-            "line-color": "#888",
+            "line-color": nateColour,
             "line-width": 1
         }
     });
@@ -311,7 +290,7 @@ map.on('load', function () {
         type: "line",
         source: "damanRoutes",
         "paint": {
-            "line-color": "#888",
+            "line-color": damanColour,
             "line-width": 1
         }
     });
@@ -349,10 +328,7 @@ map.on('load', function () {
     //Matt Points click functionality
     map.on('click', 'MattPts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -371,10 +347,7 @@ map.on('load', function () {
     //Anna Points click functionality
     map.on('click', 'AnnaPts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -393,10 +366,7 @@ map.on('load', function () {
     //Nate Points click functionality
     map.on('click', 'NatePts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -415,10 +385,7 @@ map.on('load', function () {
     //Daman Points click functionality
     map.on('click', 'DamanPts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.City + "</h3><h4>" + e.features[0].properties.Country + "</h4><p>" + e.features[0].properties.SiteName + " at IP: " + e.features[0].properties.IP_Number + "</p>";
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }

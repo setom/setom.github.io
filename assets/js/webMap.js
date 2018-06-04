@@ -6,10 +6,10 @@ var map = new mapboxgl.Map({
     zoom: 1.5
 });
 
-var mattColour = '#8dd3c7';
-var annaColour = '#ffffb3';
-var nateColour = '#bebada';
-var damanColour = '#fb8072';
+var mattColour = '#74ee15';
+var annaColour = '#ffe700';
+var nateColour = '#f000ff';
+var damanColour = '#4deeea';
 
 map.on('load', function () {
     //Matt Points Data
@@ -43,14 +43,15 @@ map.on('load', function () {
             "circle-radius": [
                 "step",
                 ["get", "point_count"],
-                20,
+                6,
                 2,
-                30,
+                8,
                 5,
-                40
+                10
             ],
-            "circle-stroke-width": 1,
-            "circle-stroke-color": "#fff"
+            "circle-stroke-width": 8,
+            "circle-stroke-color": mattColour,
+            "circle-stroke-opacity": 0.75
         }
     });
     map.addLayer({
@@ -60,25 +61,28 @@ map.on('load', function () {
         filter: ["!has", "point_count"],
         paint: {
             "circle-color": mattColour,
-            "circle-radius": 4,
-            "circle-stroke-width": 1,
+            "circle-radius": 6,
+            "circle-stroke-width": 3,
             "circle-stroke-color": "#fff"
         }
     });
-    /*//Code for adding numbers to the clusters
-     map.addLayer({
-     id: "cluster-count",
-     type: "symbol",
-     source: "mattPoints",
-     filter: ["has", "point_count"],
-     layout: {
-     "text-field": "{point_count_abbreviated}",
-     "text-font": ["DIN Offc Pro Medium", "Arial Unicode MS Bold"],
-     "text-size": 12
-     }
-     });
-     */
-    //Nate Points Data
+    map.addLayer({
+        id: "Mattcluster-count",
+        type: "symbol",
+        source: "mattPoints",
+        filter: ["has", "point_count"],
+        layout: {
+            "text-field": "{point_count_abbreviated}",
+            "text-font": ["Magda Clean Mono Offc Pro Regular", "Arial Unicode MS Bold"],
+            "text-size": 14
+        },
+        paint:
+                {
+                    "text-color": "#000000"
+                }
+    });
+
+//Nate Points Data
     map.addSource("natePoints", {
         type: "geojson",
         data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/nateHistory.geojson",
@@ -109,14 +113,15 @@ map.on('load', function () {
             "circle-radius": [
                 "step",
                 ["get", "point_count"],
-                20,
+                6,
                 2,
-                30,
+                8,
                 5,
-                40
+                10
             ],
-            "circle-stroke-width": 1,
-            "circle-stroke-color": "#fff"
+            "circle-stroke-width": 8,
+            "circle-stroke-color": nateColour,
+            "circle-stroke-opacity": 0.75
         }
     });
     map.addLayer({
@@ -126,12 +131,27 @@ map.on('load', function () {
         filter: ["!has", "point_count"],
         paint: {
             "circle-color": nateColour,
-            "circle-radius": 4,
-            "circle-stroke-width": 1,
+            "circle-radius": 6,
+            "circle-stroke-width": 3,
             "circle-stroke-color": "#fff"
         }
     });
-    //Anna Points Data
+    map.addLayer({
+        id: "Natecluster-count",
+        type: "symbol",
+        source: "natePoints",
+        filter: ["has", "point_count"],
+        layout: {
+            "text-field": "{point_count_abbreviated}",
+            "text-font": ["Magda Clean Mono Offc Pro Regular", "Arial Unicode MS Bold"],
+            "text-size": 14
+        },
+        paint:
+                {
+                    "text-color": "#000000"
+                }
+    });
+//Anna Points Data
     map.addSource("annaPoints", {
         type: "geojson",
         data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/annaHistory.geojson",
@@ -162,14 +182,15 @@ map.on('load', function () {
             "circle-radius": [
                 "step",
                 ["get", "point_count"],
-                20,
+                6,
                 2,
-                30,
+                8,
                 5,
-                40
+                10
             ],
-            "circle-stroke-width": 1,
-            "circle-stroke-color": "#fff"
+            "circle-stroke-width": 8,
+            "circle-stroke-color": annaColour,
+            "circle-stroke-opacity": 0.75
         }
     });
     map.addLayer({
@@ -179,12 +200,27 @@ map.on('load', function () {
         filter: ["!has", "point_count"],
         paint: {
             "circle-color": annaColour,
-            "circle-radius": 4,
-            "circle-stroke-width": 1,
+            "circle-radius": 6,
+            "circle-stroke-width": 3,
             "circle-stroke-color": "#fff"
         }
     });
-    //Daman Points Data
+    map.addLayer({
+        id: "Annacluster-count",
+        type: "symbol",
+        source: "annaPoints",
+        filter: ["has", "point_count"],
+        layout: {
+            "text-field": "{point_count_abbreviated}",
+            "text-font": ["Magda Clean Mono Offc Pro Regular", "Arial Unicode MS Bold"],
+            "text-size": 14
+        },
+        paint:
+                {
+                    "text-color": "#000000"
+                }
+    });
+//Daman Points Data
     map.addSource("damanPoints", {
         type: "geojson",
         data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/damanHistory.geojson",
@@ -215,14 +251,15 @@ map.on('load', function () {
             "circle-radius": [
                 "step",
                 ["get", "point_count"],
-                20,
+                6,
                 2,
-                30,
+                8,
                 5,
-                40
+                10
             ],
-            "circle-stroke-width": 1,
-            "circle-stroke-color": "#fff"
+            "circle-stroke-width": 8,
+            "circle-stroke-color": damanColour,
+            "circle-stroke-opacity": 0.75
         }
     });
     map.addLayer({
@@ -232,13 +269,28 @@ map.on('load', function () {
         filter: ["!has", "point_count"],
         paint: {
             "circle-color": damanColour,
-            "circle-radius": 4,
-            "circle-stroke-width": 1,
+            "circle-radius": 6,
+            "circle-stroke-width": 3,
             "circle-stroke-color": "#fff"
         }
     });
+    map.addLayer({
+        id: "Damancluster-count",
+        type: "symbol",
+        source: "damanPoints",
+        filter: ["has", "point_count"],
+        layout: {
+            "text-field": "{point_count_abbreviated}",
+            "text-font": ["Magda Clean Mono Offc Pro Regular", "Arial Unicode MS Bold"],
+            "text-size": 14
+        },
+        paint:
+                {
+                    "text-color": "#000000"
+                }
+    });
 
-    //Matt Routes Data
+//Matt Routes Data
     map.addSource('mattRoutes', {
         type: "geojson",
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/mattRoutes.geojson'
@@ -249,10 +301,11 @@ map.on('load', function () {
         source: "mattRoutes",
         "paint": {
             "line-color": mattColour,
-            "line-width": 1
+            "line-width": 1,
+            "line-opacity": 0.25
         }
     });
-    //Anna Routes Data
+//Anna Routes Data
     map.addSource('annaRoutes', {
         type: "geojson",
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/annaRoutes.geojson'
@@ -263,10 +316,11 @@ map.on('load', function () {
         source: "annaRoutes",
         "paint": {
             "line-color": annaColour,
-            "line-width": 1
+            "line-width": 1,
+            "line-opacity": 0.25
         }
     });
-    //Nate Routes Data
+//Nate Routes Data
     map.addSource('nateRoutes', {
         type: "geojson",
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/nateRoutes.geojson'
@@ -277,10 +331,11 @@ map.on('load', function () {
         source: "nateRoutes",
         "paint": {
             "line-color": nateColour,
-            "line-width": 1
+            "line-width": 1,
+            "line-opacity": 0.25
         }
     });
-    //Daman Routes Data
+//Daman Routes Data
     map.addSource('damanRoutes', {
         type: "geojson",
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/damanRoutes.geojson'
@@ -291,33 +346,34 @@ map.on('load', function () {
         source: "damanRoutes",
         "paint": {
             "line-color": damanColour,
-            "line-width": 1
+            "line-width": 1,
+            "line-opacity": 0.25
         }
     });
 
 
-    //Matt Cluster zoom/click functionality
+//Matt Cluster zoom/click functionality
     map.on('click', 'Matt', function (e) {
         map.flyTo({
             center: e.features[0].geometry.coordinates,
             zoom: map.getZoom() + 2
         });
     });
-    //Anna Cluster zoom/click functionality
+//Anna Cluster zoom/click functionality
     map.on('click', 'Anna', function (e) {
         map.flyTo({
             center: e.features[0].geometry.coordinates,
             zoom: map.getZoom() + 2
         });
     });
-    //Nate Cluster zoom/click functionality
+//Nate Cluster zoom/click functionality
     map.on('click', 'Nate', function (e) {
         map.flyTo({
             center: e.features[0].geometry.coordinates,
             zoom: map.getZoom() + 2
         });
     });
-    //Daman Cluster zoom/click functionality
+//Daman Cluster zoom/click functionality
     map.on('click', 'Daman', function (e) {
         map.flyTo({
             center: e.features[0].geometry.coordinates,
@@ -325,10 +381,10 @@ map.on('load', function () {
         });
     });
 
-    //Matt Points click functionality
+//Matt Points click functionality
     map.on('click', 'MattPts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -344,10 +400,10 @@ map.on('load', function () {
     map.on('mouseleave', 'MattPts', function () {
         map.getCanvas().style.cursor = '';
     });
-    //Anna Points click functionality
+//Anna Points click functionality
     map.on('click', 'AnnaPts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -363,10 +419,10 @@ map.on('load', function () {
     map.on('mouseleave', 'AnnaPts', function () {
         map.getCanvas().style.cursor = '';
     });
-    //Nate Points click functionality
+//Nate Points click functionality
     map.on('click', 'NatePts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
+        var description = "<h3><a href=\"" + e.features[0].properties.SiteName + "\">"+ e.features[0].properties.SiteName +"</a></h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -382,10 +438,10 @@ map.on('load', function () {
     map.on('mouseleave', 'NatePts', function () {
         map.getCanvas().style.cursor = '';
     });
-    //Daman Points click functionality
+//Daman Points click functionality
     map.on('click', 'DamanPts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";   
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
@@ -401,8 +457,8 @@ map.on('load', function () {
     map.on('mouseleave', 'DamanPts', function () {
         map.getCanvas().style.cursor = '';
     });
-
-});
+}
+);
 
 //Toggle the layers on/off
 var toggleableLayerIds = ['Anna', 'Daman', 'Matt', 'Nate'];
@@ -426,12 +482,14 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
             map.setLayoutProperty(clickedLayer, 'visibility', 'none');
             map.setLayoutProperty(clickedLayer + "Pts", 'visibility', 'none');
             map.setLayoutProperty(clickedLayer + "Routes", 'visibility', 'none');
+            map.setLayoutProperty(clickedLayer + "cluster-count", 'visibility', 'none');
             this.className = '';
         } else {
             this.className = 'active';
             map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
             map.setLayoutProperty(clickedLayer + "Pts", 'visibility', 'visible');
             map.setLayoutProperty(clickedLayer + "Routes", 'visibility', 'visible');
+            map.setLayoutProperty(clickedLayer + "cluster-count", 'visibility', 'visible');
         }
     };
 

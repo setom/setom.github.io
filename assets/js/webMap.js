@@ -6,31 +6,6 @@ var map = new mapboxgl.Map({
     zoom: 1.5
 });
 
-var destinationNate = [
-    [-77.4875, 39.0437],
-    [-71.2011, 42.5085],
-    [6.1392, 46.181],
-    [-87.65, 41.85],
-    [-96.8067, 32.7831],
-    [-94.5786, 39.0997],
-    [-121.9463, 37.2308],
-    [-73.6155, 45.5067],
-    [-122.0785, 37.406],
-    [-122.8707, 47.0311],
-    [-96.1747, 41.2094],
-    [-122.1292, 37.4169],
-    [2.3488, 48.8534],
-    [-112.074, 33.4484],
-    [-121.8948, 37.6853],
-    [-122.6762, 45.5234],
-    [-111.6341, 40.2139],
-    [3.1746, 50.6942],
-    [-122.3952, 37.7757],
-    [-121.895, 37.3394],
-    [-111.8879, 33.602],
-    [-122.3321, 47.6062],
-    [151.198, -33.8612]
-];
 
 var destinationDaman = [
     [4.8897, 52.374],
@@ -286,7 +261,7 @@ map.on('load', function () {
 
     //Matt Routes Data
     map.addSource('mattRoutes', {
-        type: "geojson", 
+        type: "geojson",
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/mattRoutes.geojson'
     });
     map.addLayer({
@@ -299,8 +274,8 @@ map.on('load', function () {
         }
     });
     //Anna Routes Data
-        map.addSource('annaRoutes', {
-        type: "geojson", 
+    map.addSource('annaRoutes', {
+        type: "geojson",
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/annaRoutes.geojson'
     });
     map.addLayer({
@@ -312,15 +287,29 @@ map.on('load', function () {
             "line-width": 1
         }
     });
-        //Nate Routes Data
-        map.addSource('nateRoutes', {
-        type: "geojson", 
+    //Nate Routes Data
+    map.addSource('nateRoutes', {
+        type: "geojson",
         data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/nateRoutes.geojson'
     });
     map.addLayer({
         id: "NateRoutes",
         type: "line",
         source: "nateRoutes",
+        "paint": {
+            "line-color": "#888",
+            "line-width": 1
+        }
+    });
+    //Daman Routes Data
+    map.addSource('damanRoutes', {
+        type: "geojson",
+        data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/damanRoutes.geojson'
+    });
+    map.addLayer({
+        id: "DamanRoutes",
+        type: "line",
+        source: "damanRoutes",
         "paint": {
             "line-color": "#888",
             "line-width": 1

@@ -2,8 +2,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2V0b20iLCJhIjoiY2poeHdjMnYzMGc5djNxbnRjeWN4e
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/setom/cjhxw9byy11ct2rmuzfmj3ji1',
-    center: [-96, 37.8],
-    zoom: 3
+    center: [0,35],
+    zoom: 2
 });
 
 // Tacoma

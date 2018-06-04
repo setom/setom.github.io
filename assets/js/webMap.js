@@ -422,7 +422,7 @@ map.on('load', function () {
 //Nate Points click functionality
     map.on('click', 'NatePts', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = "<h3><a href=\"" + e.features[0].properties.SiteName + "\">"+ e.features[0].properties.SiteName +"</a></h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";
+        var description = "<h3>" + e.features[0].properties.SiteName + "</h3><h4>" + e.features[0].properties.City + ", " + e.features[0].properties.Country + "</h4><p> at IP: " + e.features[0].properties.IP_Number + "</p>";
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }

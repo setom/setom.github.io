@@ -446,23 +446,20 @@ map.on('load', function () {
         }
     });
 
-    //Matt Routes Data
-    for (var i = 0; i < routesMatt.length; i++) {
-        map.addSource('routeM' + i, {
-            "type": "geojson",
-            "data": routesMatt[i]
-        });
 
-        map.addLayer({
-            "id": "routeM" + i,
-            "source": "routeM" + i,
-            "type": "line",
-            "paint": {
-                "line-width": 1.5,
-                "line-color": "#00FF00"
-            }
-        });
-    }
+    map.addSource('mattRoutes', {
+        type: "geojson", 
+        data: 'https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/mattRoutes.geojson'
+    });
+    map.addLayer({
+        id: "MattRoutes",
+        type: "line",
+        source: "mattRoutes",
+        "paint": {
+            "line-color": "#888",
+            "line-width": 8
+        }
+    });
     //Anna Routes Data
     for (var i = 0; i < routesAnna.length; i++) {
         map.addSource('routeA' + i, {
@@ -656,13 +653,13 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
         if (visibility === 'visible') {
             map.setLayoutProperty(clickedLayer, 'visibility', 'none');
             map.setLayoutProperty(clickedLayer + "Pts", 'visibility', 'none');
-           // map.setLayoutProperty(clickedLayer + "Routes", 'visibility', 'none');
+            map.setLayoutProperty(clickedLayer + "Routes", 'visibility', 'none');
             this.className = '';
         } else {
             this.className = 'active';
             map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
             map.setLayoutProperty(clickedLayer + "Pts", 'visibility', 'visible');
-            //map.setLayoutProperty(clickedLayer + "Routes", 'visibility', 'visible');
+            map.setLayoutProperty(clickedLayer + "Routes", 'visibility', 'visible');
         }
     };
 

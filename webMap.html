@@ -17,7 +17,11 @@ and open the template in the editor.
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <style>
-
+            body {
+                background-image: url("images/matrix.jpg");
+                color: white;
+                font-weight: bold;
+            }
             #map { height: 85vh;
             }
             #menu {
@@ -66,6 +70,11 @@ and open the template in the editor.
                 max-width: 400px;
                 font: 12px/20px 'Courier', Arial, Helvetica, sans-serif;
             }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108644064-1"></script>
         <!-- Leaflet -->
@@ -90,20 +99,23 @@ and open the template in the editor.
         </script>
     </head>
     <body>
-
-
         <!-- Content -->
         <div style='padding: 15px;'>
-            <h2>Map my (Browser) History</h2>
-            <p>There is no cloud, there is only someone else's computer. When you browse through the Internet you are making calls to those computers. But where are they? Just clicking through a few websites could bring you thousands of miles across oceans and contints. We collected our own browser history for approximately a week and pinged their IPs and server locations.</p>
+            <h2 style='font-weight: bold; color: white;'>Map my (Browser) History</h2>
+            <img class='center' src="images/noCloud.png" alt="https://medium.com/@storjproject/there-is-no-cloud-it-s-just-someone-else-s-computer-6ecc37cdcfe5"/>
+            <p>The world is big, really big. Through the miracle of the Internet you have millions of pieces of information right at your fingertips. When you browse through the Internet you are talking to different computers all over the world, but where exactly are they? Even though you haven't left your seat, just clicking through a few websites could bring you thousands of miles across oceans and continents. We collected our own browser history for approximately a week and pinged their IPs and server locations.</p>
             <div id='map'>
                 <nav id="menu"></nav>
                 <script src="assets/js/webMap.js" type="text/javascript"></script>
             </div>
             <hr>
             <div>
-                <h3>Where Did I Go Today?</h3>
+                <h3 style='font-weight: bold; color: white;'>Where Did I Go Today?</h3>
                 <p>This map shows the results of locations of those servers. Unbeknownst to us, we all hit servers outside of North America. Click the map points to discover site names and locations, there are some surprising results!</p>
+                <p>Quick glances at the map indicate that there are general hot-spots of server farms, in only one week's worth of data we roughly identify farm locations in the American West Coast, Southwest, North East, and Northern Europe.</p>
+                <p>Continued analysis over time would begin to illuminate trends of 'hotspots'. </p>
+                <h3 style='font-weight: bold; color: white;'>Other Notes:</h3>
+                <p>This data was self-selected for evaluation and is not a comprehensive list of all sites visited in the data collection period. In many cases URLs will redirect to one of multiple servers, the results here represent the first server redirect. Thanks to <a href='https://www.iplocation.net/'>iplocation.net</a> for providing IP location services. Location points are aproximate only, geocoded to the nearest city.</p>
             </div>
         </div>
     </body>

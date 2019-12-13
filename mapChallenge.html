@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Matthew Seto Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <style>
+            .table {
+                border-spacing:5px; /* need some space ?*/
+                display:table;
+                table-layout:fixed;
+                width:100%;
+            }
+            .table div {
+                display:table-cell;
+            }
+            img {
+                width:100%;
+            }
+            .bigger { font-size:50%; 
+            }
+            /* Container holding the image and the text */
+            .container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+            /* Bottom left text */
+            .bottom-left {
+                position: absolute;
+                bottom: 8px;
+                left: 16px;
+            }
+
+        </style>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108644064-1"></script>
+        <!-- Leaflet -->
+        <!-- Load Leaflet from CDN-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+        <!-- Load Esri Leaflet from Content Delivery Network (CDN) -->
+        <script src="https://unpkg.com/esri-leaflet@2.0.4/dist/esri-leaflet.js"></script>
+        <!-- Load Esri Leaflet Renderers -->
+        <!-- This will hook into Esri Leaflet to get renderer info when adding a feature layer -->
+        <script src="https://unpkg.com/esri-leaflet-renderers@2.0.6"></script>
+        <!-- Google Analytics -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-108644064-1');
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div id="header">
+
+            <div class="top">
+
+                <!-- Logo -->
+                <div id="logo">
+                    <span class="image avatar48"><img src="images/MattProfile.jpg" alt="" /></span>
+                    <h1 id="title">Matthew Seto</h1>
+                    <p>BA, BSc, MSc (In Progress)</p>
+                </div>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                        <li><a href="index.html#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                        <li><a href="index.html#capstone" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-map">MSc Capstone Project</span></a></li>
+                        <li><a href="index.html#conference" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-users">Conferences</span></a></li>
+                        <li><a href="index.html#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me & Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+
+        <!-- Content -->
+        <div id="main">
+            <div style="display:inline">
+                <h2 style="padding-left: 2%;">The Heartbeat of the City</h2>
+                <h3 style="padding-left: 4%;">22 May, 2018 in Traffic</h3>
+            </div>
+            <div class="table">
+                <div>
+                    <h4>Day 1: Points</h4>
+                    <a href="images/MapChallenge/mapChallenge_1.png">
+                        <img src="images/MapChallenge/mapChallenge_1.png" alt=""/>
+                    </a>
+                    <p>
+                        Ottawa, ON funds outdoor rinks in the winter for public use. I pulled and geocoded rink addresses and presented them using QGis overlaid with a streets layer to help orientation.
+                    </p>
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="table">
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="table">
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                   
+                </div>
+            </div>
+            <div style="padding-left:1px;">
+                <p>
+                    These maps are 1-hour contributions to the 30 Day Map Challenge to keep my skills fresh and try/learn new techniques
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

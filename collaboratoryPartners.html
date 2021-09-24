@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Display a map on a webpage</title>
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
-<style>
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-</style>
+    <meta charset="utf-8">
+    <title>Display a map on a webpage</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-<div id="map"></div>
-<script>
-	// TO MAKE THE MAP APPEAR YOU MUST
-	// ADD YOUR ACCESS TOKEN FROM
-	// https://account.mapbox.com
-	mapboxgl.accessToken = 'pk.eyJ1Ijoic2V0b20iLCJhIjoiY2o5NmN0dHB4MDNoaDJ3bWw1N2JvemlpaSJ9.McVFy9qwVkdrV_anNWv7jw';
-    const map = new mapboxgl.Map({
-        container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9 // starting zoom
-    });
-</script>
+    <div id="map"></div>
+    <script>
+        // TO MAKE THE MAP APPEAR YOU MUST
+        // ADD YOUR ACCESS TOKEN FROM
+        // https://account.mapbox.com
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2V0b20iLCJhIjoiY2o5NmN0dHB4MDNoaDJ3bWw1N2JvemlpaSJ9.McVFy9qwVkdrV_anNWv7jw';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/dark-v9', // style URL
+            center: [0,30], // starting position [lng, lat]
+            zoom: 1 // starting zoom
+        });
+
+        map.on('load', function () {
+            map.addSource("partners", {
+                type: "geojson",
+                data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/Community_orgs.geojson",
+                //cluster: true,
+                //clusterMaxZoom: 14, // Max zoom to cluster points on
+                //clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+            });
+
+            map.addLayer({
+                id:"partners", 
+                type:"circle",
+                source:"partners",
+                paint :{
+                    "circle-color": '#b5091a',
+                    "circle-radius": 3
+                }
+            });
+        });
+
+        //Point zoom/click functionality
+        map.on('click', 'partners', function (e) {
+            map.flyTo({
+                center: e.features[0].geometry.coordinates,
+                zoom: map.getZoom() + 2
+            });
+        });
+
+    </script>
 
 </body>
+
 </html>

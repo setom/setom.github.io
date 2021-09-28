@@ -54,10 +54,36 @@
                     "circle-radius": 3
                 }
             });
+
+            map.addSource("institutions", {
+                type: "geojson",
+                data: "https://raw.githubusercontent.com/setom/setom.github.io/master/assets/files/GeoJsons/Institutions.geojson",
+                //cluster: true,
+                //clusterMaxZoom: 14, // Max zoom to cluster points on
+                //clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+            });
+
+            map.addLayer({
+                id:"institutions", 
+                type:"circle",
+                source:"institutions",
+                paint :{
+                    "circle-color": '#09b5a4',
+                    "circle-opacity" : .75,
+                    "circle-radius": 5
+                }
+            });
         });
 
         //Point zoom/click functionality
         map.on('click', 'partners', function (e) {
+            map.flyTo({
+                center: e.features[0].geometry.coordinates,
+                zoom: map.getZoom() + 2
+            });
+        });
+
+        map.on('click', 'institutions', function (e) {
             map.flyTo({
                 center: e.features[0].geometry.coordinates,
                 zoom: map.getZoom() + 2

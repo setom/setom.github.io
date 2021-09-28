@@ -19,12 +19,45 @@
             bottom: 0;
             width: 100%;
         }
+
+        .map-overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #fff;
+            margin-right: 20px;
+            font-family: Arial, sans-serif;
+            overflow: auto;
+            border-radius: 3px;
+        }
+
+        #legend {
+            padding: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            line-height: 18px;
+            height: 110px;
+            margin-bottom: 40px;
+            width: 110px;
+        }
+
+        .legend-key {
+            display: inline-block;
+            border-radius: 20%;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+        }
     </style>
 </head>
 
 <body>
     <div id="map"></div>
+    <div class='map-overlay' id='legend'></div>
     <script>
+
+        institutionColor = '#09b5a4';
+        partnerColor = '#b5091a';
+
         // TO MAKE THE MAP APPEAR YOU MUST
         // ADD YOUR ACCESS TOKEN FROM
         // https://account.mapbox.com
@@ -32,7 +65,7 @@
         const map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v9', // style URL
-            center: [0,30], // starting position [lng, lat]
+            center: [0, 30], // starting position [lng, lat]
             zoom: 1 // starting zoom
         });
 
@@ -46,11 +79,11 @@
             });
 
             map.addLayer({
-                id:"partners", 
-                type:"circle",
-                source:"partners",
-                paint :{
-                    "circle-color": '#b5091a',
+                id: "partners",
+                type: "circle",
+                source: "partners",
+                paint: {
+                    "circle-color": partnerColor,
                     "circle-radius": 3
                 }
             });
@@ -64,14 +97,40 @@
             });
 
             map.addLayer({
-                id:"institutions", 
-                type:"circle",
-                source:"institutions",
-                paint :{
-                    "circle-color": '#09b5a4',
-                    "circle-opacity" : .75,
+                id: "institutions",
+                type: "circle",
+                source: "institutions",
+                paint: {
+                    "circle-color": institutionColor,
+                    "circle-opacity": .75,
                     "circle-radius": 5
                 }
+            });
+
+            // create legend
+            const legend = document.getElementById('legend');
+            title = document.createElement('span');
+            title.innerHTML="Collaboratory Institiutions & Partners";
+            legend.appendChild(title);
+            linebreak = document.createElement('span');
+            linebreak.innerHTML = "<hr>";
+            legend.appendChild(linebreak);
+
+            const layers = ["Institutions", "Partners"];
+            const colors = [institutionColor, partnerColor]
+
+            layers.forEach((layer, i) => {
+                const color = colors[i];
+                const item = document.createElement('div');
+                const key = document.createElement('span');
+                key.className = 'legend-key';
+                key.style.backgroundColor = color;
+
+                const value = document.createElement('span');
+                value.innerHTML = `${layer}`;
+                item.appendChild(key);
+                item.appendChild(value);
+                legend.appendChild(item);
             });
         });
 
